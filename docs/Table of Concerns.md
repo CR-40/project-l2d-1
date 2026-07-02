@@ -1,0 +1,15 @@
+| Component                      | Responsibility                                              | Knows About                                    | Doesn't Know About                                     |
+| ------------------------------ | ----------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------ |
+| **Player (Entity)**            | Holds components and current state                          | Components, FSM                                | Movement, combat, cooldown logic                       |
+| **Input Handler**              | Reads keyboard/controller/AI input                          | Input devices                                  | Gameplay rules                                         |
+| **Command Pattern**            | Converts input into commands                                | Input, Commands                                | Physics, combat, abilities                             |
+| **Finite State Machine (FSM)** | Determines allowed states and transitions                   | Current state, transition rules                | Input, physics, damage calculations                    |
+| **Ability System**             | Activates and updates abilities, checks cooldowns/resources | Abilities, FSM, Stats                          | Collision, damage application, movement implementation |
+| **Move Ability**               | Defines movement intent and parameters                      | Speed, direction                               | Physics and collision                                  |
+| **Dash Ability**               | Defines dash behavior and cooldown                          | Dash settings                                  | Player movement implementation                         |
+| **Attack Ability**             | Defines attack properties                                   | Damage, range, timing                          | Hit detection and health changes                       |
+| **Movement System**            | Applies movement, gravity, and collision                    | Transform, Velocity, active movement abilities | Attack logic, input handling                           |
+| **Combat System**              | Processes hits, damage, knockback                           | Hitboxes, Hurtboxes, Health                    | Input, movement                                        |
+| **Animation System**           | Plays animations based on state/events                      | FSM, events                                    | Gameplay logic                                         |
+| **Components**                 | Store game data only                                        | Data                                           | Behavior                                               |
+| **Events (optional)**          | Broadcast gameplay events                                   | Event subscribers                              | Who uses the event                                     |

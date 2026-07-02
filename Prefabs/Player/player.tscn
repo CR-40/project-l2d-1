@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://doxqfb3pt0127"]
+
+[ext_resource type="Script" uid="uid://kb32fefqnf1c" path="res://Prefabs/Player/player.gd" id="1_5wxv7"]
+[ext_resource type="Texture2D" uid="uid://gbxq16dlyla7" path="res://icon.svg" id="2_5wxv7"]
+[ext_resource type="Resource" uid="uid://b52kp1cl828t1" path="res://Prefabs/Player/player_stats.tres" id="2_you5p"]
+[ext_resource type="Script" uid="uid://dq716eonbrop4" path="res://Scripts/Abilites System/ability_manager.gd" id="3_sysjd"]
+[ext_resource type="Script" uid="uid://cqgjgddkj177h" path="res://Prefabs/Player/move.gd" id="4_21ygf"]
+[ext_resource type="Script" uid="uid://ybeuwcujf055" path="res://Prefabs/Player/jump.gd" id="6_ucnkw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iux1t"]
+radius = 60.0
+height = 120.0
+
+[node name="Player" type="CharacterBody2D" unique_id=2091112817 node_paths=PackedStringArray("ability_manager")]
+script = ExtResource("1_5wxv7")
+stats = ExtResource("2_you5p")
+ability_manager = NodePath("Ability Manager")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66352773]
+shape = SubResource("CapsuleShape2D_iux1t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1242110489]
+texture = ExtResource("2_5wxv7")
+
+[node name="Ability Manager" type="Node" parent="." unique_id=1549825033]
+editor_description = "Holds all Ability Nodes and Manages Them"
+script = ExtResource("3_sysjd")
+
+[node name="Move" type="Node" parent="Ability Manager" unique_id=454355471]
+script = ExtResource("4_21ygf")
+speed = 100.0
+
+[node name="Jump" type="Node" parent="Ability Manager" unique_id=1436585283]
+script = ExtResource("6_ucnkw")
