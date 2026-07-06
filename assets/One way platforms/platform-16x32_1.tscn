@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cinsspnyry4b5"]
+
+[ext_resource type="Texture2D" uid="uid://by6yi7pf5sxbj" path="res://assets/prototype-2d-platformer-32x32/1 Tiles/Tileset1.png" id="1_2j4ha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_th20u"]
+size = Vector2(32, 16)
+
+[node name="platform_32x96_3" type="Sprite2D" unique_id=1825446603]
+texture = ExtResource("1_2j4ha")
+offset = Vector2(16, -8)
+region_enabled = true
+region_rect = Rect2(96, 96, 32, 16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=173575437]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=137716438]
+position = Vector2(16, -8)
+shape = SubResource("RectangleShape2D_th20u")
+one_way_collision = true

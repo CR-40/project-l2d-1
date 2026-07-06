@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c4n788ehikesd"]
+
+[ext_resource type="Texture2D" uid="uid://ct7e5amiyp76" path="res://assets/prototype-2d-platformer-32x32/2 TilePrefabs/h1x5_2.png" id="1_x650n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfig2"]
+size = Vector2(158, 14)
+
+[node name="Platform" type="Sprite2D" unique_id=1816354681]
+texture = ExtResource("1_x650n")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1117919497]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=916583183]
+shape = SubResource("RectangleShape2D_gfig2")
+one_way_collision = true
+debug_color = Color(0.87667745, 0.0004125768, 0.83370465, 0.41960785)
