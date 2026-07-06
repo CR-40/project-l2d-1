@@ -1,26 +1,117 @@
 [gd_scene format=3 uid="uid://doxqfb3pt0127"]
 
 [ext_resource type="Script" uid="uid://kb32fefqnf1c" path="res://Prefabs/Player/player.gd" id="1_5wxv7"]
-[ext_resource type="Texture2D" uid="uid://gbxq16dlyla7" path="res://icon.svg" id="2_5wxv7"]
 [ext_resource type="Resource" uid="uid://b52kp1cl828t1" path="res://Prefabs/Player/player_stats.tres" id="2_you5p"]
+[ext_resource type="Texture2D" uid="uid://dvmn18wnsp5ex" path="res://assets/DarkSamuraiAssets/DarkSamurai (64x64).png" id="3_m5xj4"]
 [ext_resource type="Script" uid="uid://dq716eonbrop4" path="res://Scripts/Abilites System/ability_manager.gd" id="3_sysjd"]
-[ext_resource type="Script" uid="uid://cqgjgddkj177h" path="res://Prefabs/Player/move.gd" id="4_21ygf"]
-[ext_resource type="Script" uid="uid://ybeuwcujf055" path="res://Prefabs/Player/jump.gd" id="6_ucnkw"]
+[ext_resource type="Script" uid="uid://cqgjgddkj177h" path="res://Prefabs/Player/Abilities/move.gd" id="4_21ygf"]
+[ext_resource type="Script" uid="uid://ybeuwcujf055" path="res://Prefabs/Player/Abilities/jump.gd" id="6_ucnkw"]
+[ext_resource type="Script" uid="uid://3l7jhvtrpgjb" path="res://Prefabs/Player/Abilities/dash.gd" id="7_ine62"]
+[ext_resource type="Script" uid="uid://cha13u70286ta" path="res://Prefabs/Player/Abilities/attack.gd" id="8_m5xj4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r2b0n"]
+radius = 13.247617
+height = 35.760826
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a00l3"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5xj4"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtqie"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tt850"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27c8n"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nad7g"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7m7dm"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sfrm"]
+atlas = ExtResource("3_m5xj4")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iux1t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a00l3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5xj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtqie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tt850")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27c8n")
+}],
+"loop": 2,
+"name": &"slash_attack",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nad7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7m7dm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sfrm")
+}],
+"loop": 1,
+"name": &"strike_attack",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iux1t"]
-radius = 60.0
-height = 120.0
+radius = 6.0
+height = 24.0
 
-[node name="Player" type="CharacterBody2D" unique_id=2091112817 node_paths=PackedStringArray("ability_manager")]
+[node name="Player" type="CharacterBody2D" unique_id=2091112817 node_paths=PackedStringArray("hitbox", "ability_manager")]
 script = ExtResource("1_5wxv7")
 stats = ExtResource("2_you5p")
+hitbox = NodePath("Hit Box")
 ability_manager = NodePath("Ability Manager")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66352773]
-shape = SubResource("CapsuleShape2D_iux1t")
+[node name="Hit Box" type="Area2D" parent="." unique_id=744202782]
+rotation = 0.08439416
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1242110489]
-texture = ExtResource("2_5wxv7")
+[node name="1" type="CollisionShape2D" parent="Hit Box" unique_id=253004222]
+position = Vector2(9, 2)
+rotation = 1.6580628
+shape = SubResource("CapsuleShape2D_r2b0n")
+debug_color = Color(0.8509804, 0, 0, 0.41960785)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1285905595]
+sprite_frames = SubResource("SpriteFrames_iux1t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66352773]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_iux1t")
 
 [node name="Ability Manager" type="Node" parent="." unique_id=1549825033]
 editor_description = "Holds all Ability Nodes and Manages Them"
@@ -28,7 +119,20 @@ script = ExtResource("3_sysjd")
 
 [node name="Move" type="Node" parent="Ability Manager" unique_id=454355471]
 script = ExtResource("4_21ygf")
-speed = 100.0
+speed = 300.0
 
 [node name="Jump" type="Node" parent="Ability Manager" unique_id=1436585283]
 script = ExtResource("6_ucnkw")
+jump_strength = 750.0
+jump_cut_multiplier = 0.15
+
+[node name="Dash" type="Node" parent="Ability Manager" unique_id=12582262]
+script = ExtResource("7_ine62")
+dash_time = 0.25
+
+[node name="Timer" type="Timer" parent="Ability Manager/Dash" unique_id=1693529543]
+one_shot = true
+ignore_time_scale = true
+
+[node name="Attack" type="Node" parent="Ability Manager" unique_id=2018035292]
+script = ExtResource("8_m5xj4")

@@ -1,3 +1,4 @@
+class_name AbilityManager
 extends Node
 
 var abilities: Dictionary = {}
@@ -6,33 +7,27 @@ var abilities: Dictionary = {}
 func _ready() -> void:
 	_load_Abilities(self)
 
-func process_abilities(delta: float) -> void:
-	if abilities.has("Jump"):
-		abilities["Jump"].process(delta)
-
-## Loads Abilities present under the Abilities Node.
-## [br]
-## This function iterates through the children of the provided Abilities Node and initializes any Ability components found, adding them to the entity's ability list.
-## [br]
-## [b]param:[/b] [code]abilities[/code] - The parent Node containing the components.
 func _load_Abilities(_abilities : Node) -> void :
 	if _abilities == null:
 		print("No Abilities found for ", entity.name, " or the Abilities Node is not set.")
 		return
+	
+	for ability in get_children():
+		if ability is Ability:
+			ability.init(entity,self)
+			abilities[ability.name] = ability
 
-	#for c in _abilities.get_children() :
-		#if c is Ability: 
-			#c.init(entity)
-			#print("ability : ", c.name," is set")
-			#ability.append(c)
-			
-	for c in get_children():
-		if c is Ability:
-			c.init(entity)
-			abilities[c.name] = c
+func process_abilities(delta):
+	for ability: Ability in abilities.values():
+		ability.process(delta)
 
-func execute_jump(ctx):
-	$Jump.execute(ctx)
+func execute(ability: String, ctx):
+	if abilities.has(ability): 
+		abilities[ability].execute(ctx)
+	else : print("Requested ability ["+ability+"] Not found, Execution not possiable")
 
-func execute_move(ctx):
-	$Move.execute(ctx)
+# Talking with external systems
+signal attack_resolution_requested(atk_ctx: AttackContext)
+
+func request_attack_resolution(atk_ctx: AttackContext):
+	attack_resolution_requested.emit(atk_ctx)
