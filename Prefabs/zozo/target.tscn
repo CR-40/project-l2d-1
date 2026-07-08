@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c2b0jlsaul3mq"]
+
+[ext_resource type="Script" uid="uid://bdgluvdubuhab" path="res://Prefabs/zozo/target.gd" id="1_hptvj"]
+[ext_resource type="Texture2D" uid="uid://dk2skdmtlx16w" path="res://assets/prototype-2d-platformer-32x32/5 Objects/Target.png" id="2_vhroi"]
+[ext_resource type="Resource" uid="uid://bkmtxluupk3ei" path="res://Prefabs/zozo/target_stats.tres" id="2_w4mfl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iux1t"]
+size = Vector2(28, 32)
+
+[node name="Target" type="CharacterBody2D" unique_id=365431672]
+script = ExtResource("1_hptvj")
+stats = ExtResource("2_w4mfl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=871143635]
+position = Vector2(0, -32)
+texture = ExtResource("2_vhroi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1838267892]
+position = Vector2(0, -48)
+shape = SubResource("RectangleShape2D_iux1t")

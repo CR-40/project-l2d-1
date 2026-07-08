@@ -94,22 +94,22 @@ height = 24.0
 [node name="Player" type="CharacterBody2D" unique_id=2091112817 node_paths=PackedStringArray("hitbox", "ability_manager")]
 script = ExtResource("1_5wxv7")
 stats = ExtResource("2_you5p")
-hitbox = NodePath("Hit Box")
+hitbox = NodePath("HitBox")
 ability_manager = NodePath("Ability Manager")
 
-[node name="Hit Box" type="Area2D" parent="." unique_id=744202782]
+[node name="HitBox" type="Area2D" parent="." unique_id=744202782]
 rotation = 0.08439416
 
-[node name="1" type="CollisionShape2D" parent="Hit Box" unique_id=253004222]
+[node name="1" type="CollisionShape2D" parent="HitBox" unique_id=253004222]
 position = Vector2(9, 2)
 rotation = 1.6580628
 shape = SubResource("CapsuleShape2D_r2b0n")
 debug_color = Color(0.8509804, 0, 0, 0.41960785)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1285905595]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1285905595]
 sprite_frames = SubResource("SpriteFrames_iux1t")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=66352773]
+[node name="Collider" type="CollisionShape2D" parent="." unique_id=66352773]
 position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_iux1t")
 

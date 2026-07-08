@@ -29,5 +29,5 @@ func execute(ability: String, ctx):
 # Talking with external systems
 signal attack_resolution_requested(atk_ctx: AttackContext)
 
-func request_attack_resolution(atk_ctx: AttackContext):
+func resolve_attack(atk_ctx: AttackContext):
 	attack_resolution_requested.emit(atk_ctx)
