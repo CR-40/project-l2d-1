@@ -1,0 +1,1381 @@
+.
+├── assets
+│   ├── DarkSamuraiAssets
+│   │   ├── DarkSamurai (64x64).png
+│   │   ├── DarkSamurai (64x64).png.import
+│   │   └── DarkSamurai.aseprite
+│   ├── One way platforms
+│   │   ├── platform_16x160.tscn
+│   │   └── platform-16x32_1.tscn
+│   ├── prototype-2d-platformer-32x32
+│   │   ├── 1 Tiles
+│   │   │   ├── Tile_01.png
+│   │   │   ├── Tile_01.png.import
+│   │   │   ├── Tile_02.png
+│   │   │   ├── Tile_02.png.import
+│   │   │   ├── Tile_03.png
+│   │   │   ├── Tile_03.png.import
+│   │   │   ├── Tile_04.png
+│   │   │   ├── Tile_04.png.import
+│   │   │   ├── Tile_05.png
+│   │   │   ├── Tile_05.png.import
+│   │   │   ├── Tile_06.png
+│   │   │   ├── Tile_06.png.import
+│   │   │   ├── Tile_07.png
+│   │   │   ├── Tile_07.png.import
+│   │   │   ├── Tile_08.png
+│   │   │   ├── Tile_08.png.import
+│   │   │   ├── Tile_09.png
+│   │   │   ├── Tile_09.png.import
+│   │   │   ├── Tile_10.png
+│   │   │   ├── Tile_10.png.import
+│   │   │   ├── Tile_11.png
+│   │   │   ├── Tile_11.png.import
+│   │   │   ├── Tile_12.png
+│   │   │   ├── Tile_12.png.import
+│   │   │   ├── Tile_13.png
+│   │   │   ├── Tile_13.png.import
+│   │   │   ├── Tile_14.png
+│   │   │   ├── Tile_14.png.import
+│   │   │   ├── Tile_15.png
+│   │   │   ├── Tile_15.png.import
+│   │   │   ├── Tile_16.png
+│   │   │   ├── Tile_16.png.import
+│   │   │   ├── Tile_17.png
+│   │   │   ├── Tile_17.png.import
+│   │   │   ├── Tile_18.png
+│   │   │   ├── Tile_18.png.import
+│   │   │   ├── Tile_19.png
+│   │   │   ├── Tile_19.png.import
+│   │   │   ├── Tile_20.png
+│   │   │   ├── Tile_20.png.import
+│   │   │   ├── Tile_21.png
+│   │   │   ├── Tile_21.png.import
+│   │   │   ├── Tile_22.png
+│   │   │   ├── Tile_22.png.import
+│   │   │   ├── Tile_23.png
+│   │   │   ├── Tile_23.png.import
+│   │   │   ├── Tile_24.png
+│   │   │   ├── Tile_24.png.import
+│   │   │   ├── Tile_25.png
+│   │   │   ├── Tile_25.png.import
+│   │   │   ├── Tile_26.png
+│   │   │   ├── Tile_26.png.import
+│   │   │   ├── Tile_27.png
+│   │   │   ├── Tile_27.png.import
+│   │   │   ├── Tile_28.png
+│   │   │   ├── Tile_28.png.import
+│   │   │   ├── Tile_29.png
+│   │   │   ├── Tile_29.png.import
+│   │   │   ├── Tile_30.png
+│   │   │   ├── Tile_30.png.import
+│   │   │   ├── Tile_31.png
+│   │   │   ├── Tile_31.png.import
+│   │   │   ├── Tile_32.png
+│   │   │   ├── Tile_32.png.import
+│   │   │   ├── Tile_33.png
+│   │   │   ├── Tile_33.png.import
+│   │   │   ├── Tile_34.png
+│   │   │   ├── Tile_34.png.import
+│   │   │   ├── Tile_35.png
+│   │   │   ├── Tile_35.png.import
+│   │   │   ├── Tile_36.png
+│   │   │   ├── Tile_36.png.import
+│   │   │   ├── Tile_37.png
+│   │   │   ├── Tile_37.png.import
+│   │   │   ├── Tile_38.png
+│   │   │   ├── Tile_38.png.import
+│   │   │   ├── Tile_39.png
+│   │   │   ├── Tile_39.png.import
+│   │   │   ├── Tile_40.png
+│   │   │   ├── Tile_40.png.import
+│   │   │   ├── Tile_41.png
+│   │   │   ├── Tile_41.png.import
+│   │   │   ├── Tile_42.png
+│   │   │   ├── Tile_42.png.import
+│   │   │   ├── Tile_43.png
+│   │   │   ├── Tile_43.png.import
+│   │   │   ├── Tile_44.png
+│   │   │   ├── Tile_44.png.import
+│   │   │   ├── Tile_45.png
+│   │   │   ├── Tile_45.png.import
+│   │   │   ├── Tile_46.png
+│   │   │   ├── Tile_46.png.import
+│   │   │   ├── Tile_47.png
+│   │   │   ├── Tile_47.png.import
+│   │   │   ├── Tile_48.png
+│   │   │   ├── Tile_48.png.import
+│   │   │   ├── Tile_49.png
+│   │   │   ├── Tile_49.png.import
+│   │   │   ├── Tile_50.png
+│   │   │   ├── Tile_50.png.import
+│   │   │   ├── Tile_51.png
+│   │   │   ├── Tile_51.png.import
+│   │   │   ├── Tile_52.png
+│   │   │   ├── Tile_52.png.import
+│   │   │   ├── Tile_53.png
+│   │   │   ├── Tile_53.png.import
+│   │   │   ├── Tile_54.png
+│   │   │   ├── Tile_54.png.import
+│   │   │   ├── Tile_55.png
+│   │   │   ├── Tile_55.png.import
+│   │   │   ├── Tile_56.png
+│   │   │   ├── Tile_56.png.import
+│   │   │   ├── Tile_57.png
+│   │   │   ├── Tile_57.png.import
+│   │   │   ├── Tile_58.png
+│   │   │   ├── Tile_58.png.import
+│   │   │   ├── Tile_59.png
+│   │   │   ├── Tile_59.png.import
+│   │   │   ├── Tile_60.png
+│   │   │   ├── Tile_60.png.import
+│   │   │   ├── Tile_61.png
+│   │   │   ├── Tile_61.png.import
+│   │   │   ├── Tile_62.png
+│   │   │   ├── Tile_62.png.import
+│   │   │   ├── Tile_63.png
+│   │   │   ├── Tile_63.png.import
+│   │   │   ├── Tile_64.png
+│   │   │   ├── Tile_64.png.import
+│   │   │   ├── Tileset1.png
+│   │   │   ├── Tileset1.png.import
+│   │   │   ├── Tileset2.png
+│   │   │   ├── Tileset2.png.import
+│   │   │   ├── Tileset3.png
+│   │   │   ├── Tileset3.png.import
+│   │   │   ├── Tileset4.png
+│   │   │   ├── Tileset4.png.import
+│   │   │   ├── Tileset5.png
+│   │   │   ├── Tileset5.png.import
+│   │   │   ├── Tileset6.png
+│   │   │   └── Tileset6.png.import
+│   │   ├── 2 TilePrefabs
+│   │   │   ├── h1x3_2.png
+│   │   │   ├── h1x3_2.png.import
+│   │   │   ├── h1x3.png
+│   │   │   ├── h1x3.png.import
+│   │   │   ├── h1x5_2.png
+│   │   │   ├── h1x5_2.png.import
+│   │   │   ├── h1x5.png
+│   │   │   ├── h1x5.png.import
+│   │   │   ├── h1x7_2.png
+│   │   │   ├── h1x7_2.png.import
+│   │   │   ├── h1x7.png
+│   │   │   ├── h1x7.png.import
+│   │   │   ├── h1x9_2.png
+│   │   │   ├── h1x9_2.png.import
+│   │   │   ├── h1x9.png
+│   │   │   ├── h1x9.png.import
+│   │   │   ├── Prefabs1.png
+│   │   │   ├── Prefabs1.png.import
+│   │   │   ├── Prefabs2.png
+│   │   │   ├── Prefabs2.png.import
+│   │   │   ├── Prefabs3.png
+│   │   │   ├── Prefabs3.png.import
+│   │   │   ├── Prefabs4.png
+│   │   │   ├── Prefabs4.png.import
+│   │   │   ├── Prefabs5.png
+│   │   │   ├── Prefabs5.png.import
+│   │   │   ├── Prefabs6.png
+│   │   │   ├── Prefabs6.png.import
+│   │   │   ├── r1.png
+│   │   │   ├── r1.png.import
+│   │   │   ├── r2.png
+│   │   │   ├── r2.png.import
+│   │   │   ├── r3.png
+│   │   │   ├── r3.png.import
+│   │   │   ├── r4.png
+│   │   │   ├── r4.png.import
+│   │   │   ├── s2.png
+│   │   │   ├── s2.png.import
+│   │   │   ├── s3.png
+│   │   │   ├── s3.png.import
+│   │   │   ├── s4.png
+│   │   │   ├── s4.png.import
+│   │   │   ├── v3x1_2.png
+│   │   │   ├── v3x1_2.png.import
+│   │   │   ├── v3x1.png
+│   │   │   ├── v3x1.png.import
+│   │   │   ├── v5x1_2.png
+│   │   │   ├── v5x1_2.png.import
+│   │   │   ├── v5x1.png
+│   │   │   ├── v5x1.png.import
+│   │   │   ├── v7x1_2.png
+│   │   │   ├── v7x1_2.png.import
+│   │   │   ├── v7x1.png
+│   │   │   └── v7x1.png.import
+│   │   ├── 3 Pipes
+│   │   │   ├── Pipe_01.png
+│   │   │   ├── Pipe_01.png.import
+│   │   │   ├── Pipe_02.png
+│   │   │   ├── Pipe_02.png.import
+│   │   │   ├── Pipe_03.png
+│   │   │   ├── Pipe_03.png.import
+│   │   │   ├── Pipe_04.png
+│   │   │   ├── Pipe_04.png.import
+│   │   │   ├── Pipe_05.png
+│   │   │   ├── Pipe_05.png.import
+│   │   │   ├── Pipe_06.png
+│   │   │   ├── Pipe_06.png.import
+│   │   │   ├── Pipe_07.png
+│   │   │   ├── Pipe_07.png.import
+│   │   │   ├── Pipe_08.png
+│   │   │   ├── Pipe_08.png.import
+│   │   │   ├── Pipe_09.png
+│   │   │   ├── Pipe_09.png.import
+│   │   │   ├── Pipe_10.png
+│   │   │   ├── Pipe_10.png.import
+│   │   │   ├── Pipe_11.png
+│   │   │   ├── Pipe_11.png.import
+│   │   │   ├── Pipe_12.png
+│   │   │   ├── Pipe_12.png.import
+│   │   │   ├── Pipe_13.png
+│   │   │   ├── Pipe_13.png.import
+│   │   │   ├── Pipe_14.png
+│   │   │   ├── Pipe_14.png.import
+│   │   │   ├── Pipe_15.png
+│   │   │   ├── Pipe_15.png.import
+│   │   │   ├── Pipe_16.png
+│   │   │   ├── Pipe_16.png.import
+│   │   │   ├── Pipe_17.png
+│   │   │   ├── Pipe_17.png.import
+│   │   │   ├── Pipe_18.png
+│   │   │   ├── Pipe_18.png.import
+│   │   │   ├── Pipe_19.png
+│   │   │   ├── Pipe_19.png.import
+│   │   │   ├── Pipe_20.png
+│   │   │   ├── Pipe_20.png.import
+│   │   │   ├── Pipe_21.png
+│   │   │   ├── Pipe_21.png.import
+│   │   │   ├── PipeSet1.png
+│   │   │   ├── PipeSet1.png.import
+│   │   │   ├── PipeSet2.png
+│   │   │   ├── PipeSet2.png.import
+│   │   │   ├── PipeSet3.png
+│   │   │   ├── PipeSet3.png.import
+│   │   │   ├── PipeSet4.png
+│   │   │   ├── PipeSet4.png.import
+│   │   │   ├── PipeSet5.png
+│   │   │   ├── PipeSet5.png.import
+│   │   │   ├── PipeSet6.png
+│   │   │   └── PipeSet6.png.import
+│   │   ├── 4 BackTiles
+│   │   │   ├── BackTile_01.png
+│   │   │   ├── BackTile_01.png.import
+│   │   │   ├── BackTile_02.png
+│   │   │   ├── BackTile_02.png.import
+│   │   │   ├── BackTile_03.png
+│   │   │   ├── BackTile_03.png.import
+│   │   │   ├── BackTile_04.png
+│   │   │   ├── BackTile_04.png.import
+│   │   │   ├── BackTile_05.png
+│   │   │   ├── BackTile_05.png.import
+│   │   │   ├── BackTile_06.png
+│   │   │   ├── BackTile_06.png.import
+│   │   │   ├── BackTile_07.png
+│   │   │   ├── BackTile_07.png.import
+│   │   │   ├── BackTile_08.png
+│   │   │   ├── BackTile_08.png.import
+│   │   │   ├── BackTile_09.png
+│   │   │   ├── BackTile_09.png.import
+│   │   │   ├── BackTile_10.png
+│   │   │   ├── BackTile_10.png.import
+│   │   │   ├── BackTile_11.png
+│   │   │   ├── BackTile_11.png.import
+│   │   │   ├── BackTile_12.png
+│   │   │   ├── BackTile_12.png.import
+│   │   │   ├── BackTile_13.png
+│   │   │   ├── BackTile_13.png.import
+│   │   │   ├── BackTile_14.png
+│   │   │   ├── BackTile_14.png.import
+│   │   │   ├── BackTile_15.png
+│   │   │   ├── BackTile_15.png.import
+│   │   │   ├── BackTile_16.png
+│   │   │   ├── BackTile_16.png.import
+│   │   │   ├── BackTile_17.png
+│   │   │   ├── BackTile_17.png.import
+│   │   │   ├── BackTile_18.png
+│   │   │   ├── BackTile_18.png.import
+│   │   │   ├── BackTile_19.png
+│   │   │   ├── BackTile_19.png.import
+│   │   │   ├── BackTile_20.png
+│   │   │   ├── BackTile_20.png.import
+│   │   │   ├── BackTile_21.png
+│   │   │   ├── BackTile_21.png.import
+│   │   │   ├── BackTile_22.png
+│   │   │   ├── BackTile_22.png.import
+│   │   │   ├── BackTile_23.png
+│   │   │   ├── BackTile_23.png.import
+│   │   │   ├── BackTile_24.png
+│   │   │   ├── BackTile_24.png.import
+│   │   │   ├── BackTile_25.png
+│   │   │   ├── BackTile_25.png.import
+│   │   │   ├── BackTile_26.png
+│   │   │   ├── BackTile_26.png.import
+│   │   │   ├── BackTile_27.png
+│   │   │   ├── BackTile_27.png.import
+│   │   │   ├── BackTile_28.png
+│   │   │   ├── BackTile_28.png.import
+│   │   │   ├── BackTile_29.png
+│   │   │   ├── BackTile_29.png.import
+│   │   │   ├── BackTile_30.png
+│   │   │   ├── BackTile_30.png.import
+│   │   │   ├── BackTile_31.png
+│   │   │   ├── BackTile_31.png.import
+│   │   │   ├── BackTile_32.png
+│   │   │   ├── BackTile_32.png.import
+│   │   │   ├── BackTile_33.png
+│   │   │   ├── BackTile_33.png.import
+│   │   │   ├── BackTile_34.png
+│   │   │   ├── BackTile_34.png.import
+│   │   │   ├── BackTile_35.png
+│   │   │   ├── BackTile_35.png.import
+│   │   │   ├── BackTile_36.png
+│   │   │   ├── BackTile_36.png.import
+│   │   │   ├── BackTileset1.png
+│   │   │   ├── BackTileset1.png.import
+│   │   │   ├── BackTileset2.png
+│   │   │   ├── BackTileset2.png.import
+│   │   │   ├── BackTileset3.png
+│   │   │   ├── BackTileset3.png.import
+│   │   │   ├── BackTileset4.png
+│   │   │   ├── BackTileset4.png.import
+│   │   │   ├── BackTileset5.png
+│   │   │   ├── BackTileset5.png.import
+│   │   │   ├── BackTileset6.png
+│   │   │   └── BackTileset6.png.import
+│   │   ├── 5 Objects
+│   │   │   ├── Button2.png
+│   │   │   ├── Button2.png.import
+│   │   │   ├── Button.png
+│   │   │   ├── Button.png.import
+│   │   │   ├── Chest.png
+│   │   │   ├── Chest.png.import
+│   │   │   ├── Door2.png
+│   │   │   ├── Door2.png.import
+│   │   │   ├── Door.png
+│   │   │   ├── Door.png.import
+│   │   │   ├── Ladder1.png
+│   │   │   ├── Ladder1.png.import
+│   │   │   ├── Ladder2.png
+│   │   │   ├── Ladder2.png.import
+│   │   │   ├── Ladder3.png
+│   │   │   ├── Ladder3.png.import
+│   │   │   ├── Ladder4.png
+│   │   │   ├── Ladder4.png.import
+│   │   │   ├── Ladder5.png
+│   │   │   ├── Ladder5.png.import
+│   │   │   ├── Ladder6.png
+│   │   │   ├── Ladder6.png.import
+│   │   │   ├── Lever.png
+│   │   │   ├── Lever.png.import
+│   │   │   ├── Objects1.png
+│   │   │   ├── Objects1.png.import
+│   │   │   ├── Objects2.png
+│   │   │   ├── Objects2.png.import
+│   │   │   ├── Objects3.png
+│   │   │   ├── Objects3.png.import
+│   │   │   ├── Objects4.png
+│   │   │   ├── Objects4.png.import
+│   │   │   ├── Objects5.png
+│   │   │   ├── Objects5.png.import
+│   │   │   ├── Objects6.png
+│   │   │   ├── Objects6.png.import
+│   │   │   ├── Rope1.png
+│   │   │   ├── Rope1.png.import
+│   │   │   ├── Rope2.png
+│   │   │   ├── Rope2.png.import
+│   │   │   ├── Rope3.png
+│   │   │   ├── Rope3.png.import
+│   │   │   ├── Spikes1_2.png
+│   │   │   ├── Spikes1_2.png.import
+│   │   │   ├── Spikes1.png
+│   │   │   ├── Spikes1.png.import
+│   │   │   ├── Spikes2_2.png
+│   │   │   ├── Spikes2_2.png.import
+│   │   │   ├── Spikes2.png
+│   │   │   ├── Spikes2.png.import
+│   │   │   ├── Spikes3_2.png
+│   │   │   ├── Spikes3_2.png.import
+│   │   │   ├── Spikes3.png
+│   │   │   ├── Spikes3.png.import
+│   │   │   ├── Target2.png
+│   │   │   ├── Target2.png.import
+│   │   │   ├── Target3.png
+│   │   │   ├── Target3.png.import
+│   │   │   ├── Target.png
+│   │   │   ├── Target.png.import
+│   │   │   ├── TrainingDummy.png
+│   │   │   └── TrainingDummy.png.import
+│   │   ├── COUPON.pdf
+│   │   ├── COUPON.png
+│   │   ├── COUPON.png.import
+│   │   ├── Font.txt
+│   │   ├── Free Assets Craftpix!.url
+│   │   ├── Licens.txt
+│   │   ├── __MACOSX
+│   │   │   ├── ._1 Tiles
+│   │   │   ├── 1 Tiles
+│   │   │   │   ├── ._Tile_01.png
+│   │   │   │   ├── ._Tile_02.png
+│   │   │   │   ├── ._Tile_03.png
+│   │   │   │   ├── ._Tile_04.png
+│   │   │   │   ├── ._Tile_05.png
+│   │   │   │   ├── ._Tile_06.png
+│   │   │   │   ├── ._Tile_07.png
+│   │   │   │   ├── ._Tile_08.png
+│   │   │   │   ├── ._Tile_09.png
+│   │   │   │   ├── ._Tile_10.png
+│   │   │   │   ├── ._Tile_11.png
+│   │   │   │   ├── ._Tile_12.png
+│   │   │   │   ├── ._Tile_13.png
+│   │   │   │   ├── ._Tile_14.png
+│   │   │   │   ├── ._Tile_15.png
+│   │   │   │   ├── ._Tile_16.png
+│   │   │   │   ├── ._Tile_17.png
+│   │   │   │   ├── ._Tile_18.png
+│   │   │   │   ├── ._Tile_19.png
+│   │   │   │   ├── ._Tile_20.png
+│   │   │   │   ├── ._Tile_21.png
+│   │   │   │   ├── ._Tile_22.png
+│   │   │   │   ├── ._Tile_23.png
+│   │   │   │   ├── ._Tile_24.png
+│   │   │   │   ├── ._Tile_25.png
+│   │   │   │   ├── ._Tile_26.png
+│   │   │   │   ├── ._Tile_27.png
+│   │   │   │   ├── ._Tile_28.png
+│   │   │   │   ├── ._Tile_29.png
+│   │   │   │   ├── ._Tile_30.png
+│   │   │   │   ├── ._Tile_31.png
+│   │   │   │   ├── ._Tile_32.png
+│   │   │   │   ├── ._Tile_33.png
+│   │   │   │   ├── ._Tile_34.png
+│   │   │   │   ├── ._Tile_35.png
+│   │   │   │   ├── ._Tile_36.png
+│   │   │   │   ├── ._Tile_37.png
+│   │   │   │   ├── ._Tile_38.png
+│   │   │   │   ├── ._Tile_39.png
+│   │   │   │   ├── ._Tile_40.png
+│   │   │   │   ├── ._Tile_41.png
+│   │   │   │   ├── ._Tile_42.png
+│   │   │   │   ├── ._Tile_43.png
+│   │   │   │   ├── ._Tile_44.png
+│   │   │   │   ├── ._Tile_45.png
+│   │   │   │   ├── ._Tile_46.png
+│   │   │   │   ├── ._Tile_47.png
+│   │   │   │   ├── ._Tile_48.png
+│   │   │   │   ├── ._Tile_49.png
+│   │   │   │   ├── ._Tile_50.png
+│   │   │   │   ├── ._Tile_51.png
+│   │   │   │   ├── ._Tile_52.png
+│   │   │   │   ├── ._Tile_53.png
+│   │   │   │   ├── ._Tile_54.png
+│   │   │   │   ├── ._Tile_55.png
+│   │   │   │   ├── ._Tile_56.png
+│   │   │   │   ├── ._Tile_57.png
+│   │   │   │   ├── ._Tile_58.png
+│   │   │   │   ├── ._Tile_59.png
+│   │   │   │   ├── ._Tile_60.png
+│   │   │   │   ├── ._Tile_61.png
+│   │   │   │   ├── ._Tile_62.png
+│   │   │   │   ├── ._Tile_63.png
+│   │   │   │   ├── ._Tile_64.png
+│   │   │   │   ├── ._Tileset1.png
+│   │   │   │   ├── ._Tileset2.png
+│   │   │   │   ├── ._Tileset3.png
+│   │   │   │   ├── ._Tileset4.png
+│   │   │   │   ├── ._Tileset5.png
+│   │   │   │   └── ._Tileset6.png
+│   │   │   ├── ._2 TilePrefabs
+│   │   │   ├── 2 TilePrefabs
+│   │   │   │   ├── ._h1x3_2.png
+│   │   │   │   ├── ._h1x3.png
+│   │   │   │   ├── ._h1x5_2.png
+│   │   │   │   ├── ._h1x5.png
+│   │   │   │   ├── ._h1x7_2.png
+│   │   │   │   ├── ._h1x7.png
+│   │   │   │   ├── ._h1x9_2.png
+│   │   │   │   ├── ._h1x9.png
+│   │   │   │   ├── ._Prefabs1.png
+│   │   │   │   ├── ._Prefabs2.png
+│   │   │   │   ├── ._Prefabs3.png
+│   │   │   │   ├── ._Prefabs4.png
+│   │   │   │   ├── ._Prefabs5.png
+│   │   │   │   ├── ._Prefabs6.png
+│   │   │   │   ├── ._r1.png
+│   │   │   │   ├── ._r2.png
+│   │   │   │   ├── ._r3.png
+│   │   │   │   ├── ._r4.png
+│   │   │   │   ├── ._s2.png
+│   │   │   │   ├── ._s3.png
+│   │   │   │   ├── ._s4.png
+│   │   │   │   ├── ._v3x1_2.png
+│   │   │   │   ├── ._v3x1.png
+│   │   │   │   ├── ._v5x1_2.png
+│   │   │   │   ├── ._v5x1.png
+│   │   │   │   ├── ._v7x1_2.png
+│   │   │   │   └── ._v7x1.png
+│   │   │   ├── ._3 Pipes
+│   │   │   ├── 3 Pipes
+│   │   │   │   ├── ._Pipe_01.png
+│   │   │   │   ├── ._Pipe_02.png
+│   │   │   │   ├── ._Pipe_03.png
+│   │   │   │   ├── ._Pipe_04.png
+│   │   │   │   ├── ._Pipe_05.png
+│   │   │   │   ├── ._Pipe_06.png
+│   │   │   │   ├── ._Pipe_07.png
+│   │   │   │   ├── ._Pipe_08.png
+│   │   │   │   ├── ._Pipe_09.png
+│   │   │   │   ├── ._Pipe_10.png
+│   │   │   │   ├── ._Pipe_11.png
+│   │   │   │   ├── ._Pipe_12.png
+│   │   │   │   ├── ._Pipe_13.png
+│   │   │   │   ├── ._Pipe_14.png
+│   │   │   │   ├── ._Pipe_15.png
+│   │   │   │   ├── ._Pipe_16.png
+│   │   │   │   ├── ._Pipe_17.png
+│   │   │   │   ├── ._Pipe_18.png
+│   │   │   │   ├── ._Pipe_19.png
+│   │   │   │   ├── ._Pipe_20.png
+│   │   │   │   ├── ._Pipe_21.png
+│   │   │   │   ├── ._PipeSet1.png
+│   │   │   │   ├── ._PipeSet2.png
+│   │   │   │   ├── ._PipeSet3.png
+│   │   │   │   ├── ._PipeSet4.png
+│   │   │   │   ├── ._PipeSet5.png
+│   │   │   │   └── ._PipeSet6.png
+│   │   │   ├── ._4 BackTiles
+│   │   │   ├── 4 BackTiles
+│   │   │   │   ├── ._BackTile_01.png
+│   │   │   │   ├── ._BackTile_02.png
+│   │   │   │   ├── ._BackTile_03.png
+│   │   │   │   ├── ._BackTile_04.png
+│   │   │   │   ├── ._BackTile_05.png
+│   │   │   │   ├── ._BackTile_06.png
+│   │   │   │   ├── ._BackTile_07.png
+│   │   │   │   ├── ._BackTile_08.png
+│   │   │   │   ├── ._BackTile_09.png
+│   │   │   │   ├── ._BackTile_10.png
+│   │   │   │   ├── ._BackTile_11.png
+│   │   │   │   ├── ._BackTile_12.png
+│   │   │   │   ├── ._BackTile_13.png
+│   │   │   │   ├── ._BackTile_14.png
+│   │   │   │   ├── ._BackTile_15.png
+│   │   │   │   ├── ._BackTile_16.png
+│   │   │   │   ├── ._BackTile_17.png
+│   │   │   │   ├── ._BackTile_18.png
+│   │   │   │   ├── ._BackTile_19.png
+│   │   │   │   ├── ._BackTile_20.png
+│   │   │   │   ├── ._BackTile_21.png
+│   │   │   │   ├── ._BackTile_22.png
+│   │   │   │   ├── ._BackTile_23.png
+│   │   │   │   ├── ._BackTile_24.png
+│   │   │   │   ├── ._BackTile_25.png
+│   │   │   │   ├── ._BackTile_26.png
+│   │   │   │   ├── ._BackTile_27.png
+│   │   │   │   ├── ._BackTile_28.png
+│   │   │   │   ├── ._BackTile_29.png
+│   │   │   │   ├── ._BackTile_30.png
+│   │   │   │   ├── ._BackTile_31.png
+│   │   │   │   ├── ._BackTile_32.png
+│   │   │   │   ├── ._BackTile_33.png
+│   │   │   │   ├── ._BackTile_34.png
+│   │   │   │   ├── ._BackTile_35.png
+│   │   │   │   ├── ._BackTile_36.png
+│   │   │   │   ├── ._BackTileset1.png
+│   │   │   │   ├── ._BackTileset2.png
+│   │   │   │   ├── ._BackTileset3.png
+│   │   │   │   ├── ._BackTileset4.png
+│   │   │   │   ├── ._BackTileset5.png
+│   │   │   │   └── ._BackTileset6.png
+│   │   │   ├── ._5 Objects
+│   │   │   ├── 5 Objects
+│   │   │   │   ├── ._Button2.png
+│   │   │   │   ├── ._Button.png
+│   │   │   │   ├── ._Chest.png
+│   │   │   │   ├── ._Door2.png
+│   │   │   │   ├── ._Door.png
+│   │   │   │   ├── ._Ladder1.png
+│   │   │   │   ├── ._Ladder2.png
+│   │   │   │   ├── ._Ladder3.png
+│   │   │   │   ├── ._Ladder4.png
+│   │   │   │   ├── ._Ladder5.png
+│   │   │   │   ├── ._Ladder6.png
+│   │   │   │   ├── ._Lever.png
+│   │   │   │   ├── ._Objects1.png
+│   │   │   │   ├── ._Objects2.png
+│   │   │   │   ├── ._Objects3.png
+│   │   │   │   ├── ._Objects4.png
+│   │   │   │   ├── ._Objects5.png
+│   │   │   │   ├── ._Objects6.png
+│   │   │   │   ├── ._Rope1.png
+│   │   │   │   ├── ._Rope2.png
+│   │   │   │   ├── ._Rope3.png
+│   │   │   │   ├── ._Spikes1_2.png
+│   │   │   │   ├── ._Spikes1.png
+│   │   │   │   ├── ._Spikes2_2.png
+│   │   │   │   ├── ._Spikes2.png
+│   │   │   │   ├── ._Spikes3_2.png
+│   │   │   │   ├── ._Spikes3.png
+│   │   │   │   ├── ._Target2.png
+│   │   │   │   ├── ._Target3.png
+│   │   │   │   ├── ._Target.png
+│   │   │   │   └── ._TrainingDummy.png
+│   │   │   ├── ._COUPON.pdf
+│   │   │   ├── ._COUPON.png
+│   │   │   ├── ._Font.txt
+│   │   │   ├── ._Free Assets Craftpix!.url
+│   │   │   ├── ._Licens.txt
+│   │   │   ├── ._Palette.png
+│   │   │   ├── ._PSD
+│   │   │   └── PSD
+│   │   │       ├── ._BackTiles.psd
+│   │   │       ├── ._Free Assets Craftpix!.url
+│   │   │       ├── ._Objects.psd
+│   │   │       ├── ._Pipes.psd
+│   │   │       ├── ._TilePrefabs.psd
+│   │   │       └── ._Tileset.psd
+│   │   ├── Palette.png
+│   │   ├── Palette.png.import
+│   │   └── PSD
+│   │       ├── BackTiles.psd
+│   │       ├── Free Assets Craftpix!.url
+│   │       ├── Objects.psd
+│   │       ├── Pipes.psd
+│   │       ├── TilePrefabs.psd
+│   │       └── Tileset.psd
+│   └── world.tscn
+├── docs
+│   ├── DebugUI.md
+│   ├── Table of Concerns.md
+│   └── UMLs
+│       ├── ClassDiagram.MD
+│       ├── FlowDiagram.MD
+│       └── SequenceDiagram.MD
+├── .editorconfig
+├── filesys.txt
+├── .gitattributes
+├── .gitignore
+├── .godot
+│   ├── editor
+│   │   ├── abilitity.gd-folding-c4bf81083949b19c63f39b10e5dbc253.cfg
+│   │   ├── ability_manager.gd-folding-f2b4762142fcdfe7dd114019182eb18f.cfg
+│   │   ├── attack_context.gd-folding-4229b9b01898a616e01de776ef06a216.cfg
+│   │   ├── attack_data.gd-folding-bf6a0556f010d566dbf77c4966a7f162.cfg
+│   │   ├── attack_data.gds.gd-folding-a594312e8c07e2ddd2356b67a899c6f9.cfg
+│   │   ├── attack_data.tres-folding-aec036078c7c7af386fffd072d62c87e.cfg
+│   │   ├── attack.gd-folding-6fc8c419e6dee9bdec477ee567173bc1.cfg
+│   │   ├── attacks_ability.gd-folding-ec69fe579254d074e4c835aefde946c4.cfg
+│   │   ├── attacks.gd-folding-6ab69198352397e7008b63b40f975a2c.cfg
+│   │   ├── attacks.gd-folding-f0fde94318383b4527acad0e163a37eb.cfg
+│   │   ├── combat_system.gd-folding-b7f7abc7b7cfa9e57050e368bb1acf9e.cfg
+│   │   ├── create_recent.Node
+│   │   ├── create_recent.Object
+│   │   ├── create_recent.Resource
+│   │   ├── dash_ability.gd-folding-fef564a5b10e958644d01c68d24bc56d.cfg
+│   │   ├── dash.gd-folding-66d357d8a90187d2ad19228679f332ba.cfg
+│   │   ├── debug_ui.gd-folding-9dc22a2845657eeab3b28ab6d0eb38b3.cfg
+│   │   ├── editor_layout.cfg
+│   │   ├── editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg
+│   │   ├── Entity.gd-folding-d2199a3eb1988c08ad4f50aaa21267f4.cfg
+│   │   ├── entity_stats.tres-folding-5ec1d243f49e9fc948c4a61f01cf2a01.cfg
+│   │   ├── favorite_properties
+│   │   ├── favorites
+│   │   ├── favorites.Node
+│   │   ├── favorites.Object
+│   │   ├── favorites.Resource
+│   │   ├── filesystem_cache10
+│   │   ├── hit_data.gd-folding-f4619e82c007240976e922b3bd2bd4c7.cfg
+│   │   ├── hurt_data.gd-folding-016cbe6938a7b2ca4f33e483f5392df1.cfg
+│   │   ├── jump_ability.gd-folding-8f906f61d1b604bd8160d2ff14521191.cfg
+│   │   ├── jump.gd-folding-8585ff3e51a31b01bf3617aeb132c8a1.cfg
+│   │   ├── move_abilty.gd-folding-8268440b6178b0e5d4edb3bdc87f3b5b.cfg
+│   │   ├── move.gd-folding-12fd2a12fdc844ae0928e6f9764d86c9.cfg
+│   │   ├── move.gd-folding-1b48f1ddc0d6340012ce62a9718298bd.cfg
+│   │   ├── player.gd-folding-12fc5fc074efce88931f5a9f1a83b3f4.cfg
+│   │   ├── player.gd-folding-b4eb6e771ee26a72ccbc2309653edfc3.cfg
+│   │   ├── player_stats.tres-folding-68c0f95e41a6f68290d847aad2879c9b.cfg
+│   │   ├── player.tscn-editstate-10d6ba27c95124e9e2f66cb8ebb57635.cfg
+│   │   ├── player.tscn-editstate-ab9d5a0d9293dd21b1acdcae41fde4c7.cfg
+│   │   ├── player.tscn-folding-10d6ba27c95124e9e2f66cb8ebb57635.cfg
+│   │   ├── player.tscn-folding-ab9d5a0d9293dd21b1acdcae41fde4c7.cfg
+│   │   ├── project_metadata.cfg
+│   │   ├── quick_open_dialog_cache.cfg
+│   │   ├── recent_dirs
+│   │   ├── script_editor_cache.cfg
+│   │   ├── stats.gd-folding-38727c86f49e98faaf0d7c6eb97bfbe4.cfg
+│   │   ├── target.gd-folding-0c3f35ff1594280df9d07d1130fb2f4b.cfg
+│   │   ├── target.gd-folding-42fb0a774f8ebbf3513d4383f482a837.cfg
+│   │   ├── target_stats.gd-folding-8df55e8cf40c1e8796e2b396031471ed.cfg
+│   │   ├── target_stats.tres-folding-bc6295d1d44ce04f7972f3ec4eca32e3.cfg
+│   │   ├── target.tscn-editstate-9f9ff83df0e693b6d5d6fcff33d2ec32.cfg
+│   │   ├── target.tscn-folding-9f9ff83df0e693b6d5d6fcff33d2ec32.cfg
+│   │   ├── world.gd-folding-90cb8616f7066bcf1ef5dfd2e259c8bc.cfg
+│   │   ├── world.gd-folding-c8b3241296f1298f56f42a4fda31e57a.cfg
+│   │   ├── world.tscn-editstate-480b61f40c2eda398143a8d4d7785f25.cfg
+│   │   ├── world.tscn-folding-480b61f40c2eda398143a8d4d7785f25.cfg
+│   │   └── zozo.gd-folding-6fbe2e88278af285a21b7d8f7dbb953c.cfg
+│   ├── .gdignore
+│   ├── global_script_class_cache.cfg
+│   ├── imported
+│   │   ├── BackTile_01.png-21cf26a54e9f8cd548254b49b8dfc8cd.ctex
+│   │   ├── BackTile_01.png-21cf26a54e9f8cd548254b49b8dfc8cd.md5
+│   │   ├── BackTile_02.png-30eb14815e7c1359d28bae90c0ed53ed.ctex
+│   │   ├── BackTile_02.png-30eb14815e7c1359d28bae90c0ed53ed.md5
+│   │   ├── BackTile_03.png-24e43ca091c766dfbc8a0abe91bd6624.ctex
+│   │   ├── BackTile_03.png-24e43ca091c766dfbc8a0abe91bd6624.md5
+│   │   ├── BackTile_04.png-bf0be5293761656107530c5a05d259ea.ctex
+│   │   ├── BackTile_04.png-bf0be5293761656107530c5a05d259ea.md5
+│   │   ├── BackTile_05.png-ba2a09ada22965026912ade85af0f54d.ctex
+│   │   ├── BackTile_05.png-ba2a09ada22965026912ade85af0f54d.md5
+│   │   ├── BackTile_06.png-b677363b9db6a3de126a70dc4f4553ca.ctex
+│   │   ├── BackTile_06.png-b677363b9db6a3de126a70dc4f4553ca.md5
+│   │   ├── BackTile_07.png-8502a622f23c9bc97958a5152efe49aa.ctex
+│   │   ├── BackTile_07.png-8502a622f23c9bc97958a5152efe49aa.md5
+│   │   ├── BackTile_08.png-9227cf516236f481a29eda35fdf16177.ctex
+│   │   ├── BackTile_08.png-9227cf516236f481a29eda35fdf16177.md5
+│   │   ├── BackTile_09.png-60f8225fcd738ac567c715dacd45cec1.ctex
+│   │   ├── BackTile_09.png-60f8225fcd738ac567c715dacd45cec1.md5
+│   │   ├── BackTile_10.png-4eea1e37b4245d20bb7f42131bdab3e2.ctex
+│   │   ├── BackTile_10.png-4eea1e37b4245d20bb7f42131bdab3e2.md5
+│   │   ├── BackTile_11.png-955adcd1ae7819af5351b1f462ef9d4e.ctex
+│   │   ├── BackTile_11.png-955adcd1ae7819af5351b1f462ef9d4e.md5
+│   │   ├── BackTile_12.png-381c8a3df81240129ebdbc6f6d602597.ctex
+│   │   ├── BackTile_12.png-381c8a3df81240129ebdbc6f6d602597.md5
+│   │   ├── BackTile_13.png-7c26443f487fabf55ea22ee4e89f2b85.ctex
+│   │   ├── BackTile_13.png-7c26443f487fabf55ea22ee4e89f2b85.md5
+│   │   ├── BackTile_14.png-a460545dd3242e6665378ea0adac84eb.ctex
+│   │   ├── BackTile_14.png-a460545dd3242e6665378ea0adac84eb.md5
+│   │   ├── BackTile_15.png-5ccf5e1a28783c391452ce59da2b0a9b.ctex
+│   │   ├── BackTile_15.png-5ccf5e1a28783c391452ce59da2b0a9b.md5
+│   │   ├── BackTile_16.png-59076a7f1767dbe3a93c57176aa25470.ctex
+│   │   ├── BackTile_16.png-59076a7f1767dbe3a93c57176aa25470.md5
+│   │   ├── BackTile_17.png-060bdf11835e5e7a03fa7c57fc752d51.ctex
+│   │   ├── BackTile_17.png-060bdf11835e5e7a03fa7c57fc752d51.md5
+│   │   ├── BackTile_18.png-083f52f176ca6be9513f0aea6d8e2c0a.ctex
+│   │   ├── BackTile_18.png-083f52f176ca6be9513f0aea6d8e2c0a.md5
+│   │   ├── BackTile_19.png-cf1e343a32ea4f1113235ade124d9255.ctex
+│   │   ├── BackTile_19.png-cf1e343a32ea4f1113235ade124d9255.md5
+│   │   ├── BackTile_20.png-a72c83972bd16e5bdcd026b24eee04d8.ctex
+│   │   ├── BackTile_20.png-a72c83972bd16e5bdcd026b24eee04d8.md5
+│   │   ├── BackTile_21.png-9c4c1a5b49441a163bc36ca0bfd92ae5.ctex
+│   │   ├── BackTile_21.png-9c4c1a5b49441a163bc36ca0bfd92ae5.md5
+│   │   ├── BackTile_22.png-cb58b7310c96e988e2efa0d8ca8169e3.ctex
+│   │   ├── BackTile_22.png-cb58b7310c96e988e2efa0d8ca8169e3.md5
+│   │   ├── BackTile_23.png-6f2d42ce4ced11cbda6e8d2ea0daddfa.ctex
+│   │   ├── BackTile_23.png-6f2d42ce4ced11cbda6e8d2ea0daddfa.md5
+│   │   ├── BackTile_24.png-8640430d6037b9260c2e525e851fa49f.ctex
+│   │   ├── BackTile_24.png-8640430d6037b9260c2e525e851fa49f.md5
+│   │   ├── BackTile_25.png-89037e9ca6f40cd35f65365570e39c67.ctex
+│   │   ├── BackTile_25.png-89037e9ca6f40cd35f65365570e39c67.md5
+│   │   ├── BackTile_26.png-633b7e5dc750dae7cdf23a5da6317c0f.ctex
+│   │   ├── BackTile_26.png-633b7e5dc750dae7cdf23a5da6317c0f.md5
+│   │   ├── BackTile_27.png-61d7b31740f68b47ab5428701a37e194.ctex
+│   │   ├── BackTile_27.png-61d7b31740f68b47ab5428701a37e194.md5
+│   │   ├── BackTile_28.png-961cb5bcebe77dd74f5eb8123c0871b3.ctex
+│   │   ├── BackTile_28.png-961cb5bcebe77dd74f5eb8123c0871b3.md5
+│   │   ├── BackTile_29.png-bbdfe6fe1ce13df38d5d9eec1cbe0186.ctex
+│   │   ├── BackTile_29.png-bbdfe6fe1ce13df38d5d9eec1cbe0186.md5
+│   │   ├── BackTile_30.png-caf4d40b875b5a458b8207a49aed299d.ctex
+│   │   ├── BackTile_30.png-caf4d40b875b5a458b8207a49aed299d.md5
+│   │   ├── BackTile_31.png-18bca26551962627f00cb30c8e287582.ctex
+│   │   ├── BackTile_31.png-18bca26551962627f00cb30c8e287582.md5
+│   │   ├── BackTile_32.png-5e372d51ce5c5e685b08d67571d4e785.ctex
+│   │   ├── BackTile_32.png-5e372d51ce5c5e685b08d67571d4e785.md5
+│   │   ├── BackTile_33.png-dbf2820ed6e1db787bb4a0fe66a42cf7.ctex
+│   │   ├── BackTile_33.png-dbf2820ed6e1db787bb4a0fe66a42cf7.md5
+│   │   ├── BackTile_34.png-764099281db4c7ca879170ac205ba313.ctex
+│   │   ├── BackTile_34.png-764099281db4c7ca879170ac205ba313.md5
+│   │   ├── BackTile_35.png-49edb54e8ba1fae3d394a88698623624.ctex
+│   │   ├── BackTile_35.png-49edb54e8ba1fae3d394a88698623624.md5
+│   │   ├── BackTile_36.png-47362f7e147b720f119e785fb1e69bc0.ctex
+│   │   ├── BackTile_36.png-47362f7e147b720f119e785fb1e69bc0.md5
+│   │   ├── BackTileset1.png-fa941d90dbe5c452cc00f1c86f548a7f.ctex
+│   │   ├── BackTileset1.png-fa941d90dbe5c452cc00f1c86f548a7f.md5
+│   │   ├── BackTileset2.png-11d35a462e4b49fedc550a86909e6652.ctex
+│   │   ├── BackTileset2.png-11d35a462e4b49fedc550a86909e6652.md5
+│   │   ├── BackTileset3.png-e95702fcf51dc964d94ee487ab1f8156.ctex
+│   │   ├── BackTileset3.png-e95702fcf51dc964d94ee487ab1f8156.md5
+│   │   ├── BackTileset4.png-5e6cb13dfa964a3cdaae8d7c597a312b.ctex
+│   │   ├── BackTileset4.png-5e6cb13dfa964a3cdaae8d7c597a312b.md5
+│   │   ├── BackTileset5.png-7b73d9eea82122c15cc5374a2469a501.ctex
+│   │   ├── BackTileset5.png-7b73d9eea82122c15cc5374a2469a501.md5
+│   │   ├── BackTileset6.png-cbfa41a2f2e32e2fdb01f1be49917a79.ctex
+│   │   ├── BackTileset6.png-cbfa41a2f2e32e2fdb01f1be49917a79.md5
+│   │   ├── Button2.png-28a1279f64ce214b78e4feadf6beac82.ctex
+│   │   ├── Button2.png-28a1279f64ce214b78e4feadf6beac82.md5
+│   │   ├── Button.png-e59af3eba562bd9c6ea6fa23939f0ae1.ctex
+│   │   ├── Button.png-e59af3eba562bd9c6ea6fa23939f0ae1.md5
+│   │   ├── Chest.png-65b9e032de30ff6fc96b2fee5d5c906b.ctex
+│   │   ├── Chest.png-65b9e032de30ff6fc96b2fee5d5c906b.md5
+│   │   ├── COUPON.png-3784330897b6b1c865cfdb032e559583.ctex
+│   │   ├── COUPON.png-3784330897b6b1c865cfdb032e559583.md5
+│   │   ├── DarkSamurai (64x64).png-8cf78d66256560cb810f1becaca3627e.ctex
+│   │   ├── DarkSamurai (64x64).png-8cf78d66256560cb810f1becaca3627e.md5
+│   │   ├── Door2.png-d4e9024829dec7cc8ca642b4e294d69b.ctex
+│   │   ├── Door2.png-d4e9024829dec7cc8ca642b4e294d69b.md5
+│   │   ├── Door.png-26085f6026d961f20f545461cdb026c5.ctex
+│   │   ├── Door.png-26085f6026d961f20f545461cdb026c5.md5
+│   │   ├── h1x3_2.png-6a3a6977b6521031245de9f195cae08c.ctex
+│   │   ├── h1x3_2.png-6a3a6977b6521031245de9f195cae08c.md5
+│   │   ├── h1x3.png-37d8fc12a1e269aaf2199bbb2fd36351.ctex
+│   │   ├── h1x3.png-37d8fc12a1e269aaf2199bbb2fd36351.md5
+│   │   ├── h1x5_2.png-3a121185f69f6a6b722a569c60cbb9fa.ctex
+│   │   ├── h1x5_2.png-3a121185f69f6a6b722a569c60cbb9fa.md5
+│   │   ├── h1x5.png-1444be26172fa7cb76e732c4a2352f51.ctex
+│   │   ├── h1x5.png-1444be26172fa7cb76e732c4a2352f51.md5
+│   │   ├── h1x7_2.png-a436236922d2f693dd8281446d059496.ctex
+│   │   ├── h1x7_2.png-a436236922d2f693dd8281446d059496.md5
+│   │   ├── h1x7.png-788427d2cb28eeef9d62ae50344d96a7.ctex
+│   │   ├── h1x7.png-788427d2cb28eeef9d62ae50344d96a7.md5
+│   │   ├── h1x9_2.png-d3c79ab9389d3fccaed6ed21a669a59c.ctex
+│   │   ├── h1x9_2.png-d3c79ab9389d3fccaed6ed21a669a59c.md5
+│   │   ├── h1x9.png-acc7010f78198f993a5f6c031fc6cd23.ctex
+│   │   ├── h1x9.png-acc7010f78198f993a5f6c031fc6cd23.md5
+│   │   ├── icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex
+│   │   ├── icon.svg-218a8f2b3041327d8a5756f3a245f83b.md5
+│   │   ├── Ladder1.png-cac4ba3de38d2b9ed24c7e5c9a952519.ctex
+│   │   ├── Ladder1.png-cac4ba3de38d2b9ed24c7e5c9a952519.md5
+│   │   ├── Ladder2.png-07fa8e513d973b5303714d0ceca43615.ctex
+│   │   ├── Ladder2.png-07fa8e513d973b5303714d0ceca43615.md5
+│   │   ├── Ladder3.png-2d3045af265f60e963353e66474aa4d9.ctex
+│   │   ├── Ladder3.png-2d3045af265f60e963353e66474aa4d9.md5
+│   │   ├── Ladder4.png-9730b59408f7348ac325e61420e7c990.ctex
+│   │   ├── Ladder4.png-9730b59408f7348ac325e61420e7c990.md5
+│   │   ├── Ladder5.png-65ec92694bb016b4a2f1c233b13c8f4d.ctex
+│   │   ├── Ladder5.png-65ec92694bb016b4a2f1c233b13c8f4d.md5
+│   │   ├── Ladder6.png-2a955342cfab1f5e95202b2654607ed8.ctex
+│   │   ├── Ladder6.png-2a955342cfab1f5e95202b2654607ed8.md5
+│   │   ├── Lever.png-1349c77d94bac0c4945610d71dd3c82c.ctex
+│   │   ├── Lever.png-1349c77d94bac0c4945610d71dd3c82c.md5
+│   │   ├── Objects1.png-256992a0f9de72f452c6f37084b98c8c.ctex
+│   │   ├── Objects1.png-256992a0f9de72f452c6f37084b98c8c.md5
+│   │   ├── Objects2.png-c1c297544ab121be7572585979418116.ctex
+│   │   ├── Objects2.png-c1c297544ab121be7572585979418116.md5
+│   │   ├── Objects3.png-bc04b470ff5d2a304c243823ecdea46d.ctex
+│   │   ├── Objects3.png-bc04b470ff5d2a304c243823ecdea46d.md5
+│   │   ├── Objects4.png-2da7ad2025c892b114c547b81e34c3c3.ctex
+│   │   ├── Objects4.png-2da7ad2025c892b114c547b81e34c3c3.md5
+│   │   ├── Objects5.png-2ff676876c4400b6c60618adf0be8cd6.ctex
+│   │   ├── Objects5.png-2ff676876c4400b6c60618adf0be8cd6.md5
+│   │   ├── Objects6.png-22c9e20f515870b817c3dd0725d1b81b.ctex
+│   │   ├── Objects6.png-22c9e20f515870b817c3dd0725d1b81b.md5
+│   │   ├── Palette.png-9150a8fedd6be358bf0e60f0cbf300d0.ctex
+│   │   ├── Palette.png-9150a8fedd6be358bf0e60f0cbf300d0.md5
+│   │   ├── Pipe_01.png-472f176eff258e6b0d6746653498f4ae.ctex
+│   │   ├── Pipe_01.png-472f176eff258e6b0d6746653498f4ae.md5
+│   │   ├── Pipe_02.png-1b92e1c8ed388b85eec7ef398803aeaa.ctex
+│   │   ├── Pipe_02.png-1b92e1c8ed388b85eec7ef398803aeaa.md5
+│   │   ├── Pipe_03.png-1584353ff98f04f8a67cddac467320dc.ctex
+│   │   ├── Pipe_03.png-1584353ff98f04f8a67cddac467320dc.md5
+│   │   ├── Pipe_04.png-8996b1e84c659c0ce9df4389eabb76a5.ctex
+│   │   ├── Pipe_04.png-8996b1e84c659c0ce9df4389eabb76a5.md5
+│   │   ├── Pipe_05.png-4448591ff4d25d1fc46599702832ed7c.ctex
+│   │   ├── Pipe_05.png-4448591ff4d25d1fc46599702832ed7c.md5
+│   │   ├── Pipe_06.png-e954486d730a4c9bf32823dd53f60c8a.ctex
+│   │   ├── Pipe_06.png-e954486d730a4c9bf32823dd53f60c8a.md5
+│   │   ├── Pipe_07.png-def86e7494bec47f140ba37c4263bcca.ctex
+│   │   ├── Pipe_07.png-def86e7494bec47f140ba37c4263bcca.md5
+│   │   ├── Pipe_08.png-ccc645cac92ac1738966f50123a1ea9c.ctex
+│   │   ├── Pipe_08.png-ccc645cac92ac1738966f50123a1ea9c.md5
+│   │   ├── Pipe_09.png-67c4c639a79367d9fb685efab26f3818.ctex
+│   │   ├── Pipe_09.png-67c4c639a79367d9fb685efab26f3818.md5
+│   │   ├── Pipe_10.png-c8fe8826564dc165b5efc0f51a321c62.ctex
+│   │   ├── Pipe_10.png-c8fe8826564dc165b5efc0f51a321c62.md5
+│   │   ├── Pipe_11.png-c2a7519ed78ccbf93cf044e9bead6d92.ctex
+│   │   ├── Pipe_11.png-c2a7519ed78ccbf93cf044e9bead6d92.md5
+│   │   ├── Pipe_12.png-d1dc6273acb18bfc6eefde6d69ce9cbb.ctex
+│   │   ├── Pipe_12.png-d1dc6273acb18bfc6eefde6d69ce9cbb.md5
+│   │   ├── Pipe_13.png-7b767f9fc1dd81632dbd9ee7025a9a38.ctex
+│   │   ├── Pipe_13.png-7b767f9fc1dd81632dbd9ee7025a9a38.md5
+│   │   ├── Pipe_14.png-d744179c14318a2b227504ebc6748d47.ctex
+│   │   ├── Pipe_14.png-d744179c14318a2b227504ebc6748d47.md5
+│   │   ├── Pipe_15.png-1b851c2e22bfa74960fc76e24b3a4138.ctex
+│   │   ├── Pipe_15.png-1b851c2e22bfa74960fc76e24b3a4138.md5
+│   │   ├── Pipe_16.png-d569d311da9664c4715a68d2a8e0bf93.ctex
+│   │   ├── Pipe_16.png-d569d311da9664c4715a68d2a8e0bf93.md5
+│   │   ├── Pipe_17.png-987a912c6ddee9f80c3973b3156699ff.ctex
+│   │   ├── Pipe_17.png-987a912c6ddee9f80c3973b3156699ff.md5
+│   │   ├── Pipe_18.png-70e12275a28e8ccb5e5d04e4b9e1ef91.ctex
+│   │   ├── Pipe_18.png-70e12275a28e8ccb5e5d04e4b9e1ef91.md5
+│   │   ├── Pipe_19.png-e5c5a1f886c669c033e5e08de0c6fedc.ctex
+│   │   ├── Pipe_19.png-e5c5a1f886c669c033e5e08de0c6fedc.md5
+│   │   ├── Pipe_20.png-63a25e5424dcb571232907880b84482a.ctex
+│   │   ├── Pipe_20.png-63a25e5424dcb571232907880b84482a.md5
+│   │   ├── Pipe_21.png-202622c421dd29e7a13154c67c1bf665.ctex
+│   │   ├── Pipe_21.png-202622c421dd29e7a13154c67c1bf665.md5
+│   │   ├── PipeSet1.png-56e91eafc0341d101fc29a602eaee2f3.ctex
+│   │   ├── PipeSet1.png-56e91eafc0341d101fc29a602eaee2f3.md5
+│   │   ├── PipeSet2.png-371e0a538e389c61695ee28148ed6356.ctex
+│   │   ├── PipeSet2.png-371e0a538e389c61695ee28148ed6356.md5
+│   │   ├── PipeSet3.png-0131e63356ba7541ce76ed3fe743dd03.ctex
+│   │   ├── PipeSet3.png-0131e63356ba7541ce76ed3fe743dd03.md5
+│   │   ├── PipeSet4.png-64951c60cb28803531250ff5e6aa101e.ctex
+│   │   ├── PipeSet4.png-64951c60cb28803531250ff5e6aa101e.md5
+│   │   ├── PipeSet5.png-47d984062cb23f7f434b6b2053385987.ctex
+│   │   ├── PipeSet5.png-47d984062cb23f7f434b6b2053385987.md5
+│   │   ├── PipeSet6.png-264aac385b176e51f23eeb3f3546f080.ctex
+│   │   ├── PipeSet6.png-264aac385b176e51f23eeb3f3546f080.md5
+│   │   ├── Prefabs1.png-43cbda69414e2dde746ae7273da2f676.ctex
+│   │   ├── Prefabs1.png-43cbda69414e2dde746ae7273da2f676.md5
+│   │   ├── Prefabs2.png-f08f7e94106ad919903a2d1bce0f7dac.ctex
+│   │   ├── Prefabs2.png-f08f7e94106ad919903a2d1bce0f7dac.md5
+│   │   ├── Prefabs3.png-81df8194d00c16248c611845e91db126.ctex
+│   │   ├── Prefabs3.png-81df8194d00c16248c611845e91db126.md5
+│   │   ├── Prefabs4.png-0bc22c4fa55bc5f436cfe7bdd670217b.ctex
+│   │   ├── Prefabs4.png-0bc22c4fa55bc5f436cfe7bdd670217b.md5
+│   │   ├── Prefabs5.png-bcca4ac50ff59daa5a016d15401318bd.ctex
+│   │   ├── Prefabs5.png-bcca4ac50ff59daa5a016d15401318bd.md5
+│   │   ├── Prefabs6.png-822636a3d99f296fbcc586df3fe5e693.ctex
+│   │   ├── Prefabs6.png-822636a3d99f296fbcc586df3fe5e693.md5
+│   │   ├── r1.png-6ece28912f9cdfe4519b44dfc7a22d65.ctex
+│   │   ├── r1.png-6ece28912f9cdfe4519b44dfc7a22d65.md5
+│   │   ├── r2.png-a10423ef28e39cc6831038d2a7fb4527.ctex
+│   │   ├── r2.png-a10423ef28e39cc6831038d2a7fb4527.md5
+│   │   ├── r3.png-247532c7df8a900de7e7bf7158ff4fb3.ctex
+│   │   ├── r3.png-247532c7df8a900de7e7bf7158ff4fb3.md5
+│   │   ├── r4.png-8193c252bbe2fdbb435bc08e1fe5780b.ctex
+│   │   ├── r4.png-8193c252bbe2fdbb435bc08e1fe5780b.md5
+│   │   ├── Rope1.png-dc8e12b61a4a831f2f4f561f89add66b.ctex
+│   │   ├── Rope1.png-dc8e12b61a4a831f2f4f561f89add66b.md5
+│   │   ├── Rope2.png-a086482092e2b77c10895fa9cca6580b.ctex
+│   │   ├── Rope2.png-a086482092e2b77c10895fa9cca6580b.md5
+│   │   ├── Rope3.png-9cfc7c39225aa81065ba21fc699a97ab.ctex
+│   │   ├── Rope3.png-9cfc7c39225aa81065ba21fc699a97ab.md5
+│   │   ├── s2.png-0861625b0042e08a70b793cccb45bc4a.ctex
+│   │   ├── s2.png-0861625b0042e08a70b793cccb45bc4a.md5
+│   │   ├── s3.png-95bc2f49b96c830d04aaac149c771dde.ctex
+│   │   ├── s3.png-95bc2f49b96c830d04aaac149c771dde.md5
+│   │   ├── s4.png-d8bdcdfb21d20dce84ff9b03606d3646.ctex
+│   │   ├── s4.png-d8bdcdfb21d20dce84ff9b03606d3646.md5
+│   │   ├── Spikes1_2.png-a4f9dc722d52155248a4ee30cc6786c3.ctex
+│   │   ├── Spikes1_2.png-a4f9dc722d52155248a4ee30cc6786c3.md5
+│   │   ├── Spikes1.png-7ccbe0fc32fca6afaba53cae6d2a84f0.ctex
+│   │   ├── Spikes1.png-7ccbe0fc32fca6afaba53cae6d2a84f0.md5
+│   │   ├── Spikes2_2.png-ad8b4a6360cd1e8c0fc9f0118e83c72e.ctex
+│   │   ├── Spikes2_2.png-ad8b4a6360cd1e8c0fc9f0118e83c72e.md5
+│   │   ├── Spikes2.png-a33812253d4298e040d6c6de9877cbbc.ctex
+│   │   ├── Spikes2.png-a33812253d4298e040d6c6de9877cbbc.md5
+│   │   ├── Spikes3_2.png-29bed2b2f03a1af55c070f30c1ff5750.ctex
+│   │   ├── Spikes3_2.png-29bed2b2f03a1af55c070f30c1ff5750.md5
+│   │   ├── Spikes3.png-ae140fa298d22a22f2209b5546b6cb1e.ctex
+│   │   ├── Spikes3.png-ae140fa298d22a22f2209b5546b6cb1e.md5
+│   │   ├── Target2.png-fd4aa2335c930a98bfe3eeddc4ec151d.ctex
+│   │   ├── Target2.png-fd4aa2335c930a98bfe3eeddc4ec151d.md5
+│   │   ├── Target3.png-9fdbbc7665016c416a2718cb7c972228.ctex
+│   │   ├── Target3.png-9fdbbc7665016c416a2718cb7c972228.md5
+│   │   ├── Target.png-27cf87d3f28699536584887e8f00d9ee.ctex
+│   │   ├── Target.png-27cf87d3f28699536584887e8f00d9ee.md5
+│   │   ├── Tile_01.png-035fba1faab5fe89f171dfa23da2121f.ctex
+│   │   ├── Tile_01.png-035fba1faab5fe89f171dfa23da2121f.md5
+│   │   ├── Tile_02.png-b35cd07cb8683cba31bee6490a95c651.ctex
+│   │   ├── Tile_02.png-b35cd07cb8683cba31bee6490a95c651.md5
+│   │   ├── Tile_03.png-48598f6c70a39c91395f1ec930055717.ctex
+│   │   ├── Tile_03.png-48598f6c70a39c91395f1ec930055717.md5
+│   │   ├── Tile_04.png-b9a6849f237d8712067dd9db00213058.ctex
+│   │   ├── Tile_04.png-b9a6849f237d8712067dd9db00213058.md5
+│   │   ├── Tile_05.png-c58428c0e485f6224f5b8a6a8a703f1c.ctex
+│   │   ├── Tile_05.png-c58428c0e485f6224f5b8a6a8a703f1c.md5
+│   │   ├── Tile_06.png-7c70570b5fe316147dad2adb2ea4d3f3.ctex
+│   │   ├── Tile_06.png-7c70570b5fe316147dad2adb2ea4d3f3.md5
+│   │   ├── Tile_07.png-05fa2307bbf90efa80e5ee05ddf04417.ctex
+│   │   ├── Tile_07.png-05fa2307bbf90efa80e5ee05ddf04417.md5
+│   │   ├── Tile_08.png-9ef35e820cd5c3be773c3b31c319a85f.ctex
+│   │   ├── Tile_08.png-9ef35e820cd5c3be773c3b31c319a85f.md5
+│   │   ├── Tile_09.png-d036e0b59ce9aea5b11e3eec33d2e7a3.ctex
+│   │   ├── Tile_09.png-d036e0b59ce9aea5b11e3eec33d2e7a3.md5
+│   │   ├── Tile_10.png-afb4208fa01da23ed398b1c9de0e14aa.ctex
+│   │   ├── Tile_10.png-afb4208fa01da23ed398b1c9de0e14aa.md5
+│   │   ├── Tile_11.png-58673f469229237a2e1d5454d62e3c79.ctex
+│   │   ├── Tile_11.png-58673f469229237a2e1d5454d62e3c79.md5
+│   │   ├── Tile_12.png-ce35b3e316c8ecf97e1c6b1f661aa5aa.ctex
+│   │   ├── Tile_12.png-ce35b3e316c8ecf97e1c6b1f661aa5aa.md5
+│   │   ├── Tile_13.png-0e99694b080c445983c02e6fd0814f37.ctex
+│   │   ├── Tile_13.png-0e99694b080c445983c02e6fd0814f37.md5
+│   │   ├── Tile_14.png-95e3720f01d441719dd49805fc6179ba.ctex
+│   │   ├── Tile_14.png-95e3720f01d441719dd49805fc6179ba.md5
+│   │   ├── Tile_15.png-6dc226692a9f55b51d9d45c3389305dc.ctex
+│   │   ├── Tile_15.png-6dc226692a9f55b51d9d45c3389305dc.md5
+│   │   ├── Tile_16.png-6395cb5e6570f3e75449a10373d5ad21.ctex
+│   │   ├── Tile_16.png-6395cb5e6570f3e75449a10373d5ad21.md5
+│   │   ├── Tile_17.png-8b78231bed52831ebd79750481657955.ctex
+│   │   ├── Tile_17.png-8b78231bed52831ebd79750481657955.md5
+│   │   ├── Tile_18.png-914ff316d9c797731fc017712809fa97.ctex
+│   │   ├── Tile_18.png-914ff316d9c797731fc017712809fa97.md5
+│   │   ├── Tile_19.png-3c654523174492f8fb2c7841e7766afa.ctex
+│   │   ├── Tile_19.png-3c654523174492f8fb2c7841e7766afa.md5
+│   │   ├── Tile_20.png-47e703416ffbfb001d7453c66753b01e.ctex
+│   │   ├── Tile_20.png-47e703416ffbfb001d7453c66753b01e.md5
+│   │   ├── Tile_21.png-9ce3486612bc7229c0bbf3e0fe777822.ctex
+│   │   ├── Tile_21.png-9ce3486612bc7229c0bbf3e0fe777822.md5
+│   │   ├── Tile_22.png-0073d9a89cb8483b8fc400676c590530.ctex
+│   │   ├── Tile_22.png-0073d9a89cb8483b8fc400676c590530.md5
+│   │   ├── Tile_23.png-212115a91fdfdd00aa32c4bfd17ff8aa.ctex
+│   │   ├── Tile_23.png-212115a91fdfdd00aa32c4bfd17ff8aa.md5
+│   │   ├── Tile_24.png-0662de4c1701a280c1b546ce1145e017.ctex
+│   │   ├── Tile_24.png-0662de4c1701a280c1b546ce1145e017.md5
+│   │   ├── Tile_25.png-cf371cfbd7b670dfb021dbb30796e034.ctex
+│   │   ├── Tile_25.png-cf371cfbd7b670dfb021dbb30796e034.md5
+│   │   ├── Tile_26.png-5b5e061ed1af31c11d043b6a054930f7.ctex
+│   │   ├── Tile_26.png-5b5e061ed1af31c11d043b6a054930f7.md5
+│   │   ├── Tile_27.png-ed2f07537e907b9f362c4d4026e5ebba.ctex
+│   │   ├── Tile_27.png-ed2f07537e907b9f362c4d4026e5ebba.md5
+│   │   ├── Tile_28.png-019750282f3a3eb582230718682be096.ctex
+│   │   ├── Tile_28.png-019750282f3a3eb582230718682be096.md5
+│   │   ├── Tile_29.png-28fad538a481904d9c98871b1004c803.ctex
+│   │   ├── Tile_29.png-28fad538a481904d9c98871b1004c803.md5
+│   │   ├── Tile_30.png-075df70d9140f1e3d5938fef84e187ec.ctex
+│   │   ├── Tile_30.png-075df70d9140f1e3d5938fef84e187ec.md5
+│   │   ├── Tile_31.png-a53e9abe6809b159dada0739c02f3fb5.ctex
+│   │   ├── Tile_31.png-a53e9abe6809b159dada0739c02f3fb5.md5
+│   │   ├── Tile_32.png-93049eb2c54eb764f911278c47d2eed7.ctex
+│   │   ├── Tile_32.png-93049eb2c54eb764f911278c47d2eed7.md5
+│   │   ├── Tile_33.png-9ab59667e87b4d748f5d83dc9dcb9a34.ctex
+│   │   ├── Tile_33.png-9ab59667e87b4d748f5d83dc9dcb9a34.md5
+│   │   ├── Tile_34.png-e8ee8134f9e58a59f53ab43b510ddd46.ctex
+│   │   ├── Tile_34.png-e8ee8134f9e58a59f53ab43b510ddd46.md5
+│   │   ├── Tile_35.png-80f71afbd9bee1d1b4ec35d0f75ad4dd.ctex
+│   │   ├── Tile_35.png-80f71afbd9bee1d1b4ec35d0f75ad4dd.md5
+│   │   ├── Tile_36.png-dc67d38fcf6ade69bc5ac34302961af3.ctex
+│   │   ├── Tile_36.png-dc67d38fcf6ade69bc5ac34302961af3.md5
+│   │   ├── Tile_37.png-ef826621a13f0dd422eebbfb7763f1db.ctex
+│   │   ├── Tile_37.png-ef826621a13f0dd422eebbfb7763f1db.md5
+│   │   ├── Tile_38.png-e947338be8156a02282d32cf1ab93b28.ctex
+│   │   ├── Tile_38.png-e947338be8156a02282d32cf1ab93b28.md5
+│   │   ├── Tile_39.png-4f2be1e711b7030381edb8245f6c48df.ctex
+│   │   ├── Tile_39.png-4f2be1e711b7030381edb8245f6c48df.md5
+│   │   ├── Tile_40.png-cac09a2d9dedb55b225b2ca7f96deb6e.ctex
+│   │   ├── Tile_40.png-cac09a2d9dedb55b225b2ca7f96deb6e.md5
+│   │   ├── Tile_41.png-a12a42e062c10235cdbe237c99addc69.ctex
+│   │   ├── Tile_41.png-a12a42e062c10235cdbe237c99addc69.md5
+│   │   ├── Tile_42.png-3fa47af86cc2188542b081d7764d1dc0.ctex
+│   │   ├── Tile_42.png-3fa47af86cc2188542b081d7764d1dc0.md5
+│   │   ├── Tile_43.png-1e1cc3d6d782fa527f85b6d3ea3c64ff.ctex
+│   │   ├── Tile_43.png-1e1cc3d6d782fa527f85b6d3ea3c64ff.md5
+│   │   ├── Tile_44.png-b4a9748cc8f8092a6c22fcab4979d5dd.ctex
+│   │   ├── Tile_44.png-b4a9748cc8f8092a6c22fcab4979d5dd.md5
+│   │   ├── Tile_45.png-52f0289afa34d961328fb78539ad1bf7.ctex
+│   │   ├── Tile_45.png-52f0289afa34d961328fb78539ad1bf7.md5
+│   │   ├── Tile_46.png-8588350938709a8059fd221b55ca6ff9.ctex
+│   │   ├── Tile_46.png-8588350938709a8059fd221b55ca6ff9.md5
+│   │   ├── Tile_47.png-4ff59ef8f0f19da7c18e2f2a41699026.ctex
+│   │   ├── Tile_47.png-4ff59ef8f0f19da7c18e2f2a41699026.md5
+│   │   ├── Tile_48.png-7d3a419cd83b4661b6c59b9ab5b19fbb.ctex
+│   │   ├── Tile_48.png-7d3a419cd83b4661b6c59b9ab5b19fbb.md5
+│   │   ├── Tile_49.png-390b8ea9f31d7a6cdc9f96c6b22c16f9.ctex
+│   │   ├── Tile_49.png-390b8ea9f31d7a6cdc9f96c6b22c16f9.md5
+│   │   ├── Tile_50.png-fb01825bfd9ceed7f817148804812a7d.ctex
+│   │   ├── Tile_50.png-fb01825bfd9ceed7f817148804812a7d.md5
+│   │   ├── Tile_51.png-7a80a7de27d1428225c5012ef7ca28ac.ctex
+│   │   ├── Tile_51.png-7a80a7de27d1428225c5012ef7ca28ac.md5
+│   │   ├── Tile_52.png-d38c0bac2ffa0545b329ff4a5482f538.ctex
+│   │   ├── Tile_52.png-d38c0bac2ffa0545b329ff4a5482f538.md5
+│   │   ├── Tile_53.png-da82975cf25dc183684021b89339284e.ctex
+│   │   ├── Tile_53.png-da82975cf25dc183684021b89339284e.md5
+│   │   ├── Tile_54.png-09aea539f0996fb4106f1385eedf5cea.ctex
+│   │   ├── Tile_54.png-09aea539f0996fb4106f1385eedf5cea.md5
+│   │   ├── Tile_55.png-cf8ac723093d8a8021c8ebb0a92e8f47.ctex
+│   │   ├── Tile_55.png-cf8ac723093d8a8021c8ebb0a92e8f47.md5
+│   │   ├── Tile_56.png-5820a2143983843588f5fb3fa6dadc95.ctex
+│   │   ├── Tile_56.png-5820a2143983843588f5fb3fa6dadc95.md5
+│   │   ├── Tile_57.png-eef9d02c8fe96b676474222f80df2800.ctex
+│   │   ├── Tile_57.png-eef9d02c8fe96b676474222f80df2800.md5
+│   │   ├── Tile_58.png-1ac6f473e2ecc0c5c31e478c67c0d686.ctex
+│   │   ├── Tile_58.png-1ac6f473e2ecc0c5c31e478c67c0d686.md5
+│   │   ├── Tile_59.png-22acfe44c1c81171fce8c1a4659f2851.ctex
+│   │   ├── Tile_59.png-22acfe44c1c81171fce8c1a4659f2851.md5
+│   │   ├── Tile_60.png-9f3726de5f8224d364ba673bb9e270d0.ctex
+│   │   ├── Tile_60.png-9f3726de5f8224d364ba673bb9e270d0.md5
+│   │   ├── Tile_61.png-7769e47f72f064fce0985d2923bd3378.ctex
+│   │   ├── Tile_61.png-7769e47f72f064fce0985d2923bd3378.md5
+│   │   ├── Tile_62.png-6f846fea586263f41ddadb864ab45099.ctex
+│   │   ├── Tile_62.png-6f846fea586263f41ddadb864ab45099.md5
+│   │   ├── Tile_63.png-33022d2905a51936db7246c559c32021.ctex
+│   │   ├── Tile_63.png-33022d2905a51936db7246c559c32021.md5
+│   │   ├── Tile_64.png-9011aab3ee5d2730d2cb6f43ce044f02.ctex
+│   │   ├── Tile_64.png-9011aab3ee5d2730d2cb6f43ce044f02.md5
+│   │   ├── Tileset1.png-2384c98e64aaee51ab3055c9288b6e0c.ctex
+│   │   ├── Tileset1.png-2384c98e64aaee51ab3055c9288b6e0c.md5
+│   │   ├── Tileset2.png-e47e69dc3c0d664f47fb0e1da7c8f720.ctex
+│   │   ├── Tileset2.png-e47e69dc3c0d664f47fb0e1da7c8f720.md5
+│   │   ├── Tileset3.png-e4eabfd65b4c63f6b07dbac839e6ead1.ctex
+│   │   ├── Tileset3.png-e4eabfd65b4c63f6b07dbac839e6ead1.md5
+│   │   ├── Tileset4.png-e1b5a517613820364002fc28e4ddbb61.ctex
+│   │   ├── Tileset4.png-e1b5a517613820364002fc28e4ddbb61.md5
+│   │   ├── Tileset5.png-7dde143b02bb553c801d492004c3b575.ctex
+│   │   ├── Tileset5.png-7dde143b02bb553c801d492004c3b575.md5
+│   │   ├── Tileset6.png-4ee7587fae858984a8d0358a575a4215.ctex
+│   │   ├── Tileset6.png-4ee7587fae858984a8d0358a575a4215.md5
+│   │   ├── TrainingDummy.png-2e8659d59afa44528144248554cf8c96.ctex
+│   │   ├── TrainingDummy.png-2e8659d59afa44528144248554cf8c96.md5
+│   │   ├── v3x1_2.png-a0dd438212881a630913b3ccd01c5bc0.ctex
+│   │   ├── v3x1_2.png-a0dd438212881a630913b3ccd01c5bc0.md5
+│   │   ├── v3x1.png-89023d0e51bd66996d51d6b8eef3445e.ctex
+│   │   ├── v3x1.png-89023d0e51bd66996d51d6b8eef3445e.md5
+│   │   ├── v5x1_2.png-321485e2ca3e53390ae0159696c311e6.ctex
+│   │   ├── v5x1_2.png-321485e2ca3e53390ae0159696c311e6.md5
+│   │   ├── v5x1.png-9d3a115bcefe3a39ca3443b69bbf790b.ctex
+│   │   ├── v5x1.png-9d3a115bcefe3a39ca3443b69bbf790b.md5
+│   │   ├── v7x1_2.png-21d2479496f991474215b1dc75c4dad3.ctex
+│   │   ├── v7x1_2.png-21d2479496f991474215b1dc75c4dad3.md5
+│   │   ├── v7x1.png-62370785e737cbfec63dab6772ed92d3.ctex
+│   │   └── v7x1.png-62370785e737cbfec63dab6772ed92d3.md5
+│   ├── mono
+│   │   └── metadata
+│   │       └── ide_messaging_meta.txt
+│   ├── scene_groups_cache.cfg
+│   ├── shader_cache
+│   │   ├── BlitShaderRD
+│   │   │   ├── 60730ff5d181828d793048b679aedf660ec932db990c939f300e8875dc43b3cf
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── ae4daaa7a60bb17ebd7e9de5db9422fb448b52ad89776ae7aa53fee442f7cc60
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── BlurRasterShaderRD
+│   │   │   ├── 20a75312929409f35774ac082eb3624b19438e651295f6e0764202355de2a0e9
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 9c5ce6c282305d452850250d675e75b5784d4bd5843cfef7c8c782a789f8ed56
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── BokehDofRasterShaderRD
+│   │   │   ├── 3716f7470c2bc7277ad5798591e286fa51fc9cc4ee11101a0bc4935a6e14e8b0
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 8641c53aea67ee360fd91fe57abfedf8e7ff723cb62ccf7a29ced875fbf9649b
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CanvasOcclusionShaderRD
+│   │   │   ├── 606df5c981910bc4bc719cf497719273e80d1f314f65e68820bf8e2111368cdb
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── c5cf7e62fd49f618cfdba96629de618a1b26be203d90def17606a90a4e91cf73
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CanvasSdfShaderRD
+│   │   │   ├── a4f6d732dba9a4cc0c37a1ca52936369e2ee148e9d03efe1b81bfed822adb1eb
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── cf39877e178c34ede4db342bbf1779a27125701d45df76cb3d07ef7c626416f2
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CanvasShaderRD
+│   │   │   ├── 5454ca85157b6953b76bf324ebe90594c466e36301bf1b3e6adcce117d705c79
+│   │   │   │   ├── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   │   ├── 89e0c5a264d1558e7bc2ca0dc3d0afd834fbe7b6.vulkan.cache
+│   │   │   │   ├── 8f9335de72e837eeead40640cc01fddc5baf5a7c.vulkan.cache
+│   │   │   │   ├── b7f8864ed1b8040a3456125a335ae926e257bf47.vulkan.cache
+│   │   │   │   └── ddf1c2fb49f2d96e42d4ffa10cbbb808b4b14063.vulkan.cache
+│   │   │   └── 9bdc1125c86af67021aafde8760184618f2961034b221ad5dbe673034858b1f3
+│   │   │       ├── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │       ├── 89e0c5a264d1558e7bc2ca0dc3d0afd834fbe7b6.vulkan.cache
+│   │   │       ├── 8f9335de72e837eeead40640cc01fddc5baf5a7c.vulkan.cache
+│   │   │       ├── b7f8864ed1b8040a3456125a335ae926e257bf47.vulkan.cache
+│   │   │       ├── c2f7efc3419efdd79fabd056897820a83f2ac2c9.vulkan.cache
+│   │   │       ├── ddf1c2fb49f2d96e42d4ffa10cbbb808b4b14063.vulkan.cache
+│   │   │       └── f3e0fa7ed42441e58a3a071c086d9b7d016da4aa.vulkan.cache
+│   │   ├── CopyShaderRD
+│   │   │   ├── 06416dbb331f92a2c651ac0fcedf5ba066aafc28e591c899ee8a8f8d9167a537
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── c374588e7ae9bf64919d0186bea3104b4f721cc0691d284a9998e1e7d06c5eb8
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CopyToFbShaderRD
+│   │   │   ├── 516ca1db49f0c89dd5ba5b5f4bb3c26316beafa783d4ea24b25e254d8fc1c428
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 72456b3a82af4da12c412275d4c8ffa4a6a5447d9daffeeef86bc16965803813
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CubeToDpShaderRD
+│   │   │   ├── da14e2c9b701a4bd7336b87667bf4f3b4f645de09781824763d2bbceead56c83
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── e83b3bb7481a3ffcfdeab999671e26d0ae4d08e0fd57c3368f137e22ad78a1e9
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── CubeToOctmapShaderRD
+│   │   │   ├── 0a8d46601d323eeb200276345183d0f1446febb4d2b0a580f23bde0fe45e85fa
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 7a5a6871c4fae131d3fef2e125ac23cbe81a1a042028f8c294461282de463c9a
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── LuminanceReduceRasterShaderRD
+│   │   │   ├── 64ab628341e9cf29ef6194796669b84730634d7b0838d39615342160fa4bcea2
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 97cb02ab5911f2a8d75ef67f15005df781d925c0a6a7f42bae9debcc745bcf7a
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── MotionVectorsShaderRD
+│   │   │   ├── 4d3ba0c01e8b64c74a0f2f0fd20ddc8099d56cfbb3ee9e7dbe6dc3c54c174725
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 50b078842febfa35329120080e7954028fe9c0f19ee8582e6d69667cc29f6f8c
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── OctmapDownsamplerShaderRD
+│   │   │   ├── 17404978f453a0a0388dfb81b2d08f173476d2c3b680e2e6aa35bcf438e24f11
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 2232c0d2bbd0444161f6eedf2e402237f04e43c0b0a4182ae60f382701c9e84e
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── OctmapFilterShaderRD
+│   │   │   ├── 69e12a24310984e7449782cf761a5e21046453235d7d53c5f7ea355f7e0b333e
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── cd03c4ea34362e2724f4d4536156039ee5ca21c31167b8840dfc65dad2d6bb11
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── OctmapRoughnessShaderRD
+│   │   │   ├── 8132261fb0413e611623bf6a3742240101d2f040003a5dee889bbfbb21633b8f
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 8470960c68b74292e24251e3b7e41d28e9a5054dce0cd1d77c2a2a865a10af43
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── ParticlesCopyShaderRD
+│   │   │   ├── 24d89099f97b1cf1fc7cbbc8f348e37b3ecfeff2344b41cb9355bb1701693999
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── ce2b95c8a6b9e21f14c989c3ca095de77d9bb5e86213ae4180fb97cbd2c02a10
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── ParticlesShaderRD
+│   │   │   ├── b6c7d969adc2c9522906fb5ed230ec231f2f6f4ef9270fc1c37bfe95bf5330bc
+│   │   │   │   └── 07b5904b662900d90454c39c46885098de79aa4c.vulkan.cache
+│   │   │   └── f645828ab356b17f1478c77373935ecd2417e1c227a96b62417396293d13970e
+│   │   │       └── 07b5904b662900d90454c39c46885098de79aa4c.vulkan.cache
+│   │   ├── ResolveRasterShaderRD
+│   │   │   ├── 137533f5cd9053770129104644f24ab1233ba842cf0fab2a907f5680ea22aa2d
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 1ad763dfd68e7cb51994da5e0532e00be0ee1e9bd347eabb982d30f85a1c1526
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SceneForwardMobileShaderRD
+│   │   │   ├── 1c00fd5a9921130b91e9916ecf1217b0ea3a65bed2da018ee89b3400dbab4286
+│   │   │   ├── 2335feb0d5214733bb59a9116397c10bcef053ae79babc2340da4e38aa499fd4
+│   │   │   ├── 38d827458d6d60c7170a42403f658fa0969cb6440031c231862b1ce723a499b6
+│   │   │   ├── 3a441e0e52cde4e514a0e1d5c3e7c54615f3251481be32b9bd2d26226f6c8bbb
+│   │   │   ├── 51265bb99e2f3d8d9d5375bcb307c8e1d44aa55fd3bb279fe2c35048b8b51ddd
+│   │   │   ├── 6d9f7ab3b942ffe88a9e9718dca9815d7e584c0a3042ec3c28154d9b5b4f940f
+│   │   │   ├── cce9d30bc7ec81830f885499a444fcc195115691b3878d91376d8a2c442cfe70
+│   │   │   │   ├── 02c86814035a46b723fc63849c963fa909ca1d53.vulkan.cache
+│   │   │   │   ├── 10317b93f0932fcaf392366ffc2df921b5ed8d57.vulkan.cache
+│   │   │   │   ├── 281632020e3bb50b51c579792ed09cba55ca9e61.vulkan.cache
+│   │   │   │   ├── 2dc1b5cfff090b77444337c6816f834532bf6711.vulkan.cache
+│   │   │   │   ├── 347259af253e6bbec7ad5c69332af5ca731015aa.vulkan.cache
+│   │   │   │   ├── 4f2f841cc555d40f8a2f849bac494ed5624dabb9.vulkan.cache
+│   │   │   │   ├── 583bbbfe503814cac783a6592118aedae8548fea.vulkan.cache
+│   │   │   │   ├── 68104fdfa46c69c7dcd15bb54b56ab397222901f.vulkan.cache
+│   │   │   │   ├── a784797763b72ce058effad41b273eb697df9814.vulkan.cache
+│   │   │   │   ├── b600e18e20b53d8932999d48838b29553c586934.vulkan.cache
+│   │   │   │   ├── c9d4ec99cc3f0943c471902f468602cbe832a27b.vulkan.cache
+│   │   │   │   ├── ef20a42d39b7259e79ac398a95b7703f3e4cdfe4.vulkan.cache
+│   │   │   │   ├── f1d0b3988d7690fc538b57dcc42dea298b6c0321.vulkan.cache
+│   │   │   │   └── faba017f3680b49e2024b66cc6d194f77217733d.vulkan.cache
+│   │   │   └── e1770e5c33fe81774bb96a2af05f6b63f1683492a46b2f4172770fd703f44f60
+│   │   │       ├── 02c86814035a46b723fc63849c963fa909ca1d53.vulkan.cache
+│   │   │       ├── 10317b93f0932fcaf392366ffc2df921b5ed8d57.vulkan.cache
+│   │   │       ├── 281632020e3bb50b51c579792ed09cba55ca9e61.vulkan.cache
+│   │   │       ├── 2dc1b5cfff090b77444337c6816f834532bf6711.vulkan.cache
+│   │   │       ├── 347259af253e6bbec7ad5c69332af5ca731015aa.vulkan.cache
+│   │   │       ├── 4f2f841cc555d40f8a2f849bac494ed5624dabb9.vulkan.cache
+│   │   │       ├── 583bbbfe503814cac783a6592118aedae8548fea.vulkan.cache
+│   │   │       ├── a784797763b72ce058effad41b273eb697df9814.vulkan.cache
+│   │   │       ├── b600e18e20b53d8932999d48838b29553c586934.vulkan.cache
+│   │   │       ├── c9d4ec99cc3f0943c471902f468602cbe832a27b.vulkan.cache
+│   │   │       ├── ef20a42d39b7259e79ac398a95b7703f3e4cdfe4.vulkan.cache
+│   │   │       ├── f1d0b3988d7690fc538b57dcc42dea298b6c0321.vulkan.cache
+│   │   │       └── faba017f3680b49e2024b66cc6d194f77217733d.vulkan.cache
+│   │   ├── ShadowFrustumShaderRD
+│   │   │   ├── 248bc9deb54d10af912f2da1bd4b006bc43cfe08659a206fa573baf48e4050e0
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── ac0cd9c7a7b5adc08e5e0770aac36764b5ca298a1a412b5d5256e978ac014583
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SkeletonShaderRD
+│   │   │   ├── 96ae677d2af41a57b62fdce29c60aed1f841a9f298c7b5dc8c21c330ee4bfbd0
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── e6bc641e2a094416c99b1294ac5e453c55d24e0b62c1da47c8f7f93ae7877bfa
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SkyShaderRD
+│   │   │   ├── 25c4162ba5ed1f15e722f73bf07201837a6ae7b301288dd32ff9f71634118d9c
+│   │   │   │   ├── 0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701.vulkan.cache
+│   │   │   │   ├── 9247dd7bf98483a15ebb05f8c580a398614a07d8.vulkan.cache
+│   │   │   │   └── ff1961ca0c4c55a79eb12f819a7b6345801bbbaf.vulkan.cache
+│   │   │   └── 5090ce1739a75f47b8eba781fdd25da47220dbf3e500e5864faf5b69a441ea65
+│   │   │       ├── 0fa1946a11e1cca806ebfe4b3b4ac7f723d8b701.vulkan.cache
+│   │   │       ├── 9247dd7bf98483a15ebb05f8c580a398614a07d8.vulkan.cache
+│   │   │       └── ff1961ca0c4c55a79eb12f819a7b6345801bbbaf.vulkan.cache
+│   │   ├── SmaaBlendingShaderRD
+│   │   │   ├── 28d6881ae8e064e7bb573261202e530fa9cd61edce48d444d046e61ab449ac36
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── d7b7c8cec00f24f9aa8db356b4df88c5fe032d38ce38673bd520c280c936fb80
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SmaaEdgeDetectionShaderRD
+│   │   │   ├── 87693d8136d46b4b64459dbec139c5405b1cabacb2c3894415b131e8782efb2a
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 8879d099a2601bd01d4582b1e86a091c5f89a7bc46aecc9e805410f75bcda245
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SmaaWeightCalculationShaderRD
+│   │   │   ├── de1d49d5ff947e8b8382f43a79f57c4cceb02eed6f86d5175093ca63e94052bf
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── e920add2247a504ee41de41046b3e7179eb4952232110cb2db89172c537039b8
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SortShaderRD
+│   │   │   ├── a48873e523f14e04dd6158a6a01c5a4e4feb0c7d6714a8c6246ab619a144fa67
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── d8d77897b86870d358bf870233e14233981c2db9ff06641cd8f405379ac8872f
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── SpecularMergeShaderRD
+│   │   │   ├── 2ac072fb5419de33ce27c9014825f16cc6d4060426f4ba73059bc68094b6bfa8
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── 70920fc883de48dd253fbc2503dd8f4e65941df0da07e074541df12df090de98
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   ├── TexBlitShaderRD
+│   │   │   ├── d6c74a83a7053c8f0db4205307d734eb7e49dad4cffc40fefc1c098a20f56c9e
+│   │   │   │   └── 1e8995c9eb0e9b0b053035999de68595c521a33e.vulkan.cache
+│   │   │   └── fd9c885eab1da0d330a04ebfd7796019cde57f82208202f3bfc96cae74155212
+│   │   │       └── 1e8995c9eb0e9b0b053035999de68595c521a33e.vulkan.cache
+│   │   ├── TonemapMobileShaderRD
+│   │   │   ├── 7baff46e5e994b5d88a709b008f7d7a3064cea9f999fa0833938d9f8effba16e
+│   │   │   │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   │   └── d0219d249e06a0fe50412897cc24a137b74c0423bc660911325fe01a359a8273
+│   │   │       └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │   └── VrsShaderRD
+│   │       ├── 0ab6c7454d17aead7529b239657e8420143918f7e497a25a206e1bd0dd65ee07
+│   │       │   └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   │       └── fa59a74699f8241cd3f8174eaef045dc8d40f3b29bf36af5414713c289f82717
+│   │           └── 8305c75c1294a9f00656f0f14344bb8bedcfe4e7.vulkan.cache
+│   └── uid_cache.bin
+├── icon.svg
+├── icon.svg.import
+├── Prefabs
+│   ├── Player
+│   │   ├── Abilities
+│   │   │   ├── attack.gd
+│   │   │   ├── attack.gd.uid
+│   │   │   ├── dash.gd
+│   │   │   ├── dash.gd.uid
+│   │   │   ├── jump.gd
+│   │   │   ├── jump.gd.uid
+│   │   │   ├── move.gd
+│   │   │   └── move.gd.uid
+│   │   ├── player.gd
+│   │   ├── player.gd.uid
+│   │   ├── player_stats.tres
+│   │   └── player.tscn
+│   ├── world.tscn
+│   └── zozo
+│       ├── target.gd
+│       ├── target.gd.uid
+│       ├── target_stats.tres
+│       └── target.tscn
+├── project.godot
+└── Scripts
+    ├── Abilites System
+    │   ├── abilitity.gd
+    │   ├── abilitity.gd.uid
+    │   ├── ability_manager.gd
+    │   ├── ability_manager.gd.uid
+    │   ├── attacks_ability.gd
+    │   ├── attacks_ability.gd.uid
+    │   ├── Combat System
+    │   │   ├── attack_context.gd
+    │   │   ├── attack_context.gd.uid
+    │   │   ├── hit_data.gd
+    │   │   └── hit_data.gd.uid
+    │   ├── dash_ability.gd
+    │   ├── dash_ability.gd.uid
+    │   ├── jump_ability.gd
+    │   ├── jump_ability.gd.uid
+    │   ├── move_abilty.gd
+    │   └── move_abilty.gd.uid
+    ├── Combat System
+    │   ├── combat_system.gd
+    │   └── combat_system.gd.uid
+    ├── debug_ui.gd
+    ├── debug_ui.gd.uid
+    ├── Entity System
+    │   ├── Entity.gd
+    │   └── Entity.gd.uid
+    ├── Stats System
+    │   ├── stats.gd
+    │   └── stats.gd.uid
+    ├── world.gd
+    └── world.gd.uid
+
+132 directories, 1247 files

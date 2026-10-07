@@ -49,5 +49,5 @@ func perform_jump() -> void:
 	coyote_timer = 0.0
 
 func execute(_ctx):
-	print("executing jump")
+	#print("executing jump")
 	jump(null)

@@ -4,16 +4,29 @@
 [ext_resource type="Texture2D" uid="uid://dk2skdmtlx16w" path="res://assets/prototype-2d-platformer-32x32/5 Objects/Target.png" id="2_vhroi"]
 [ext_resource type="Resource" uid="uid://bkmtxluupk3ei" path="res://Prefabs/zozo/target_stats.tres" id="2_w4mfl"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_iux1t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vhroi")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iux1t"]
 size = Vector2(28, 32)
 
-[node name="Target" type="CharacterBody2D" unique_id=365431672]
+[node name="Target" type="CharacterBody2D" unique_id=365431672 node_paths=PackedStringArray("ability_manager", "animator")]
 script = ExtResource("1_hptvj")
 stats = ExtResource("2_w4mfl")
+ability_manager = NodePath("")
+animator = NodePath("AnimatedSprite2D")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=871143635]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1334546449]
 position = Vector2(0, -32)
-texture = ExtResource("2_vhroi")
+sprite_frames = SubResource("SpriteFrames_iux1t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1838267892]
 position = Vector2(0, -48)

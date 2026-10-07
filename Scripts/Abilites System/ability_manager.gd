@@ -1,21 +1,27 @@
 class_name AbilityManager
 extends Node
-
-var abilities: Dictionary = {}
 @onready var entity : Entity = $".."
 
-func _ready() -> void:
-	_load_Abilities(self)
+@export var abilities: Dictionary[String, Ability] = {}
 
-func _load_Abilities(_abilities : Node) -> void :
+func _ready() -> void:
+	_load_Abilities()
+
+func _load_Abilities() -> void :
+	var _abilities = get_children()
+	print("[Ability Manager: "+entity.name+"]=> Loading abilities... ")
 	if _abilities == null:
 		print("No Abilities found for ", entity.name, " or the Abilities Node is not set.")
 		return
 	
-	for ability in get_children():
+	for ability in _abilities:
+		print("Itterating on: "+ ability.name)
 		if ability is Ability:
 			ability.init(entity,self)
 			abilities[ability.name] = ability
+			print("Ablity set ["+ability.name+"]")
+	
+	print("[Ability Manager: "+entity.name+"]=> finished--xx \n ")
 
 func process_abilities(delta):
 	for ability: Ability in abilities.values():

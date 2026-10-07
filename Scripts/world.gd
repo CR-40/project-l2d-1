@@ -6,10 +6,7 @@ extends Node
 @export var player : Entity
 @export var debug_target : Entity
 
-@onready var debug_ui := $"Debug UI"
-
 func _ready() -> void:
-	debug_ui.target = debug_target
 	player.ability_manager.attack_resolution_requested.connect(combat_system.resolve)
 
 func _physics_process(_delta: float) -> void:
