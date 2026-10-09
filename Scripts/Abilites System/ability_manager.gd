@@ -1,5 +1,7 @@
 class_name AbilityManager
 extends Node
+var logger:GameLog = GameLog.new(GameLog.LogLevels.DEBUG, self)
+
 @onready var entity : Entity = $".."
 
 @export var abilities: Dictionary[String, Ability] = {}
@@ -9,9 +11,9 @@ func _ready() -> void:
 
 func _load_Abilities() -> void :
 	var _abilities = get_children()
-	print("[Ability Manager: "+entity.name+"]=> Loading abilities... ")
+	logger.debug("[Ability Manager: "+entity.name+"]=> Loading abilities... ")
 	if _abilities == null:
-		print("No Abilities found for ", entity.name, " or the Abilities Node is not set.")
+		logger.warn("No Abilities found for "+entity.name+" or the Abilities Node is not set.")
 		return
 	
 	for ability in _abilities:
@@ -19,9 +21,9 @@ func _load_Abilities() -> void :
 		if ability is Ability:
 			ability.init(entity,self)
 			abilities[ability.name] = ability
-			print("Ablity set ["+ability.name+"]")
+			logger.debug("Ablity set ["+ability.name+"]")
 	
-	print("[Ability Manager: "+entity.name+"]=> finished--xx \n ")
+	logger.debug("[Ability Manager: "+entity.name+"]=> finished--xx \n ")
 
 func process_abilities(delta):
 	for ability: Ability in abilities.values():
@@ -30,7 +32,7 @@ func process_abilities(delta):
 func execute(ability: String, ctx):
 	if abilities.has(ability): 
 		abilities[ability].execute(ctx)
-	else : print("Requested ability ["+ability+"] Not found, Execution not possiable")
+	else : logger.debug("Requested ability ["+ability+"] Not found, Execution not possiable")
 
 # Talking with external systems
 signal attack_resolution_requested(atk_ctx: AttackContext)

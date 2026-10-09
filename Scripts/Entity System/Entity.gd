@@ -14,6 +14,14 @@ extends CharacterBody2D
 @export var ability_manager : AbilityManager
 @export var animator : AnimatedSprite2D
 
+var face_direction : int = 0
+var move_direction : float = 0 :
+	set(value):
+		move_direction = value
+		if value == 0 : return
+		else : face_direction = sign(value)
+
+
 func _ready() -> void:
 	stats.report_death.connect(die)
 	

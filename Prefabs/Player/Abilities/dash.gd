@@ -1,9 +1,14 @@
 extends DashAbility
 
 var is_dashing : bool
-@onready var dash_timer : Timer = $Timer
+@onready var dash_timer : Timer
 
 func _ready():
+	dash_timer = Timer.new()
+	dash_timer.one_shot = true
+	dash_timer.wait_time = dash_time
+	
+	add_child(dash_timer)
 	dash_timer.timeout.connect(self.exit_dash)
 
 @export var dash_time : float = 0.3

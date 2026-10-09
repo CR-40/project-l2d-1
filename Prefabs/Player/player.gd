@@ -1,19 +1,14 @@
 class_name  Player 
 extends Entity
-
-var face_direction : int
-var move_direction : float :
-	set(value):
-		move_direction = value
-		if value == 0 : return
-		else : face_direction = sign(value)
-		handle_flip()
+var logger:GameLog = GameLog.new(GameLog.LogLevels.OFF, self)
 
 var is_attacking : bool = false
  
 func _physics_process(delta: float) -> void:
 	request_jump(delta)
 	request_move()
+	handle_flip()
+	
 	request_dash()
 	request_attack()
 	
@@ -29,6 +24,7 @@ func handle_flip():
 
 func request_jump(_delta:float)-> void :
 	if Input.is_action_just_pressed("jump"):
+		logger.trace("Jump Requested")
 		ability_manager.execute("Jump",null)
 
 func request_move() -> void :
@@ -37,20 +33,22 @@ func request_move() -> void :
 
 func request_dash() -> void :
 	if Input.is_action_just_pressed("dash"):
-		print("Requesting Dash")
+		logger.debug("Requesting Dash")
 		ability_manager.execute("Dash",null)
 
 func request_attack() -> void :
-	
 	var atk_type 
 	
 	if Input.is_action_just_pressed("attack"):
 		is_attacking = true
 		atk_type = "simple attack"
-		#print("attack Requested")
-		ability_manager.execute("Attack",atk_type)
-	#elif Input.is_action_just_pressed("power attack"): atk_type = "power attack"
-	#elif Input.is_action_just_pressed("special attack"): atk_type = "special attack"
-
 	
+	#elif Input.is_action_just_pressed("power attack"): 
+		#is_attacking = true
+		#atk_type = "power attack"
 	
+	#elif Input.is_action_just_pressed("special attack"):
+		#is_attacking = true
+		#atk_type = "special attack"
+	
+	if is_attacking : ability_manager.execute("Attack",atk_type)

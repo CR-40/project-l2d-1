@@ -18,10 +18,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iux1t"]
 size = Vector2(28, 32)
 
-[node name="Target" type="CharacterBody2D" unique_id=365431672 node_paths=PackedStringArray("ability_manager", "animator")]
+[node name="Target" type="CharacterBody2D" unique_id=365431672 node_paths=PackedStringArray("animator")]
 script = ExtResource("1_hptvj")
 stats = ExtResource("2_w4mfl")
-ability_manager = NodePath("")
 animator = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1334546449]

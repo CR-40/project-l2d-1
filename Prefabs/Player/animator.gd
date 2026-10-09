@@ -1,13 +1,14 @@
 extends AnimatedSprite2D
 
+var logger : GameLog = GameLog.new(GameLog.LogLevels.DEBUG, self)
+
 @onready var player: Player = $".."
 
 func _physics_process(_delta: float) :
 	handle_flip()
 	
 	if player.is_attacking :
-		#print("is player attacking: "+ str(player.is_attacking))
-		#print("attempting to play attack anim")
+		logger.trace("is player attacking: "+ str(player.is_attacking))
 		attack()
 		return
 	
@@ -15,6 +16,7 @@ func _physics_process(_delta: float) :
 	rise()
 	fall()
 	move()
+
 
 
 func idle():
@@ -36,6 +38,7 @@ func move():
 func attack():
 	if player.is_attacking:
 		play("attack")
+		await animation_finished
 		player.is_attacking = false
 
 func handle_flip():

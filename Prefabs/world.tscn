@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://benmvjw1p87w6" path="res://Scripts/world.gd" id="1_p054e"]
 [ext_resource type="Script" uid="uid://cicpedhmrnl8h" path="res://Scripts/Combat System/combat_system.gd" id="2_7wtak"]
 [ext_resource type="Texture2D" uid="uid://bby8g8nfkwghm" path="res://assets/prototype-2d-platformer-32x32/1 Tiles/Tileset2.png" id="2_p054e"]
-[ext_resource type="PackedScene" uid="uid://doxqfb3pt0127" path="res://Prefabs/Player/player.tscn" id="2_uuk3g"]
+[ext_resource type="Script" uid="uid://cnf16ykvut71c" path="res://Scripts/Logger/game_log.gd" id="2_pceh6"]
+[ext_resource type="PackedScene" uid="uid://dqhjtyhjv6byr" path="res://Prefabs/Player/player.tscn" id="2_uuk3g"]
 [ext_resource type="PackedScene" uid="uid://c2b0jlsaul3mq" path="res://Prefabs/zozo/target.tscn" id="6_pceh6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uuk3g"]
@@ -147,24 +148,19 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_uuk3g")
 
-[node name="world" type="Node" unique_id=1527414659 node_paths=PackedStringArray("combat_system", "player", "debug_target")]
+[node name="world" type="Node" unique_id=1527414659 node_paths=PackedStringArray("combat_system", "player")]
 script = ExtResource("1_p054e")
-GRAVITY = 50.0
+GRAVITY = 9.8
 combat_system = NodePath("Combat System")
 player = NodePath("Player")
-debug_target = NodePath("Player")
+
+[node name="Debuger" type="Node" parent="." unique_id=196557507]
+script = ExtResource("2_pceh6")
 
 [node name="Combat System" type="Node" parent="." unique_id=1093068249]
 script = ExtResource("2_7wtak")
 
 [node name="zozo" type="Node" parent="." unique_id=290958792]
-
-[node name="Player" parent="." unique_id=2091112817 instance=ExtResource("2_uuk3g")]
-position = Vector2(8, 400)
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1744514492]
-offset = Vector2(20, 0)
-zoom = Vector2(2.5, 2.5)
 
 [node name="playground" type="Node" parent="." unique_id=1053563160]
 
@@ -174,3 +170,6 @@ tile_set = SubResource("TileSet_iux1t")
 
 [node name="Target" parent="." unique_id=365431672 instance=ExtResource("6_pceh6")]
 position = Vector2(179, 417)
+
+[node name="Player" parent="." unique_id=876984183 instance=ExtResource("2_uuk3g")]
+position = Vector2(-18, 398)
