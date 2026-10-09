@@ -11,19 +11,21 @@ func _ready() -> void:
 
 func _load_Abilities() -> void :
 	var _abilities = get_children()
-	logger.debug("[Ability Manager: "+entity.name+"]=> Loading abilities... ")
-	if _abilities == null:
-		logger.warn("No Abilities found for "+entity.name+" or the Abilities Node is not set.")
+	logger.debug("[Entity: "+entity.name+"] - Loading abilities... ")
+	
+	if _abilities == []:
+		logger.warn("No Abilities found for <"+entity.name+"> or the Abilities Node is not set.")
+		logger.debug("---finished--xx \n ")
 		return
 	
 	for ability in _abilities:
-		print("Itterating on: "+ ability.name)
+		logger.trace("Itterating on: "+ ability.name)
 		if ability is Ability:
 			ability.init(entity,self)
 			abilities[ability.name] = ability
 			logger.debug("Ablity set ["+ability.name+"]")
 	
-	logger.debug("[Ability Manager: "+entity.name+"]=> finished--xx \n ")
+	logger.debug("---finished--xx \n ")
 
 func process_abilities(delta):
 	for ability: Ability in abilities.values():

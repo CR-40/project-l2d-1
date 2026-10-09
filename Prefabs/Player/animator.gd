@@ -12,11 +12,13 @@ func _physics_process(_delta: float) :
 		attack()
 		return
 	
+	if !player.is_on_floor():
+		rise()
+		fall()
+		return
+	
 	idle()
-	rise()
-	fall()
 	move()
-
 
 
 func idle():
@@ -24,11 +26,11 @@ func idle():
 		play("idle")
 
 func rise():
-	if player.velocity.y > 0:
+	if player.velocity.y < 0:
 		play("rise")
 
 func fall():
-	if player.velocity.y < 0:
+	if player.velocity.y > 0:
 		play("fall")
 
 func move():

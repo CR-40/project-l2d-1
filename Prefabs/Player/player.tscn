@@ -255,7 +255,7 @@ shape = SubResource("CapsuleShape2D_iux1t")
 
 [node name="Animator" type="AnimatedSprite2D" parent="." unique_id=262643726]
 sprite_frames = SubResource("SpriteFrames_iux1t")
-animation = &"fall"
+animation = &"idle"
 script = ExtResource("4_dw050")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=1111473265]
@@ -272,8 +272,9 @@ script = ExtResource("5_b26j0")
 [node name="Move" type="Node" parent="Ability Manager" unique_id=635067817]
 script = ExtResource("4_21ygf")
 
-[node name="Attack" type="Node" parent="Ability Manager" unique_id=1408708166]
+[node name="Attack" type="Node" parent="Ability Manager" unique_id=1408708166 node_paths=PackedStringArray("skills")]
 script = ExtResource("8_m5xj4")
+skills = [null]
 
 [node name="Dash" type="Node" parent="Ability Manager" unique_id=1834906151]
 script = ExtResource("7_ine62")
