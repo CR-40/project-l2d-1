@@ -1,6 +1,6 @@
 extends Node
 
-@export var GRAVITY : float
+@export var GRAVITY : float = 0
 
 @export var combat_system : Node
 @export var player : Entity
@@ -12,14 +12,10 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	var bodies = self.get_children()
 	for body in bodies :
-		if body is Entity: add_gravity(body)
+		if body is Entity: add_gravity(body, _delta)
 
-func add_gravity(body: Entity):
-	#print("Adding gravity [",body.name,"]")
+func add_gravity(body: Entity, delta: float) -> void:
 	if not body.is_on_floor():
-		body.velocity.y += GRAVITY 
-		#print("gravity added ",GRAVITY)
-		#print("current velocity in y ", body.velocity.y)
+		body.velocity.y += GRAVITY * delta
 	else:
-		body.velocity.y = 0
-		#print("gravity set to 0")
+		body.velocity.y = 0.0
