@@ -7,6 +7,8 @@
 @abstract class_name Entity
 extends CharacterBody2D
 
+var logger = GameLog.new(GameLog.LogLevels.DEBUG, self)
+
 # Store stats 
 @export var stats : BaseStats
 @export var hitbox : Area2D
@@ -14,19 +16,12 @@ extends CharacterBody2D
 @export var ability_manager : AbilityManager
 @export var animator : AnimatedSprite2D
 
-var face_direction : int = 0
-var move_direction : float = 0 :
-	set(value):
-		move_direction = value
-		if value == 0 : return
-		else : face_direction = sign(value)
-
 
 func _ready() -> void:
 	stats.report_death.connect(die)
 	
 	if ability_manager == null:
-		print("[Entity: " +self.name+"]=> Ability Manager not found! Creating new one...")
+		logger.warn("Ability Manager not found! Creating new one...")
 		ability_manager = AbilityManager.new()
 		ability_manager.name = "Ability Manager"
 		
