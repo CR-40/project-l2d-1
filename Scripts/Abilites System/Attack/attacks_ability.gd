@@ -1,7 +1,7 @@
 @abstract class_name AttackAbility
 extends Ability
 
-@export var skills : Array[Node]
+@export var skills : Array[AttackSkill]
 
 @abstract func process(_ctx)
 
